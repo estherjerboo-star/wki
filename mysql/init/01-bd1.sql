@@ -12,7 +12,7 @@ INSERT INTO contactos (nom_con, tlf_con) VALUES
 ('Ana López', 600111222),
 ('Borja Maartín', 611222333),
 ('Carlos Pérez', 622333444),
-('Diana Ruiz', 633444555),
+('Diana Ruizz', 633444555),
 ('Elena Gómez', 644555666),
 ('Francisco Torres', 655666777),
 ('Gabriela Navarro', 666777888);
