@@ -12,14 +12,14 @@ body {
 /* ======== CONTENEDOR ======== */
 .register-container {
     width: 100%;
-    max-width: 450px;
+    max-width: 28.125rem;
     padding: 2rem;
 }
 
 .register-box {
     background-color: #1f1f1f;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(255,204,0,0.2);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.9375rem rgba(255,204,0,0.2);
     padding: 2rem;
     text-align: center;
 }
@@ -52,14 +52,14 @@ body {
     width: 100%;
     padding: 0.8rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: #2a2a2a;
     color: #fff;
     font-size: 1rem;
 }
 
 .input-group input:focus {
-    outline: 2px solid #ffcc00;
+    outline: 0.125rem solid #ffcc00;
 }
 
 /* ======== BOTÓN ======== */
@@ -69,7 +69,7 @@ body {
     background-color: #ffcc00;
     color: #111;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -95,7 +95,7 @@ body {
 }
 
 /* ======== RESPONSIVE ======== */
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .register-box {
         padding: 1.5rem;
     }
