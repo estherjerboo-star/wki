@@ -8,7 +8,7 @@ public class ConexionBD {
 
     private static final String DB_HOST = System.getenv().getOrDefault("DB_HOST", "mysql");
     private static final String DB_PORT = System.getenv().getOrDefault("DB_PORT", "3306");
-    private static final String DB_NAME = System.getenv().getOrDefault("DB_NAME", "bd1");
+    private static final String DB_NAME = System.getenv().getOrDefault("DB_NAME", "anime_wiki");
     private static final String DB_USER = System.getenv().getOrDefault("DB_USER", "root");
     private static final String DB_PASSWORD = System.getenv().getOrDefault("DB_PASSWORD", "root");
 

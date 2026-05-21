@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los tres grandes del anime</title>
+    <link rel="icon" type="image/png" href="Assets/img/logo-circle.png">
+    <link rel="stylesheet" href="Assets/css/dashboard.css">
+</head>
+<body class="theme-home home-page" data-requires-auth="true" data-page="home">
+    <header class="wiki-header">
+        <a class="brand" href="dashboard.html" aria-label="Ir a la portada">
+            <span class="brand-mark">3</span>
+            <span class="brand-copy">
+                <strong>Los tres grandes</strong>
+                <small>Anime wiki fan</small>
+            </span>
+        </a>
+
+        <nav class="wiki-nav" aria-label="Navegacion principal">
+            <a href="dashboard.html" class="is-active">Portada</a>
+            <a href="one-piece.html">One Piece</a>
+            <a href="naruto.html">Naruto</a>
+            <a href="bleach.html">Bleach</a>
+        </nav>
+
+        <div class="user-menu" id="userMenu">
+            <button class="user-profile-button" id="userMenuButton" type="button" aria-expanded="false" aria-haspopup="true">
+                <span class="user-avatar">A</span>
+                <span class="user-details">
+                    <small>Bienvenido</small>
+                    <span id="usernameDisplay">Usuario</span>
+                </span>
+                <span class="user-arrow">+</span>
+            </button>
+
+            <div class="user-dropdown" id="userDropdown">
+                <button class="dropdown-item logout-item" id="logoutButton" type="button">Cerrar sesion</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero-panel hero-panel-stacked">
+            <div class="hero-panel-head">
+                <p class="eyebrow">Portada principal</p>
+                <h1>Los tres grandes del anime</h1>
+            </div>
+
+            <figure class="hero-panel-cover">
+                <img src="Assets/img/anime/home-cover.jpg" alt="Luffy, Naruto e Ichigo en la portada principal">
+            </figure>
+
+            <div class="hero-panel-body">
+                <div class="hero-panel-copy">
+                    <p class="hero-text">
+                        Explora una portada estilo enciclopedia con acceso rapido a los mundos de One Piece, Naruto y Bleach.
+                        Cada portada te lleva a sus apartados y cada imagen abre una ficha lista para que agregues tu propia informacion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-feature-strip">
+                <article>
+                    <strong>3 universos</strong>
+                    <span>One Piece, Naruto y Bleach reunidos en una sola wiki.</span>
+                </article>
+                <article>
+                    <strong>18 apartados</strong>
+                    <span>Arcos, clanes, quincys, yonkos y mucho mas para recorrer.</span>
+                </article>
+                <article>
+                    <strong>Comunidad</strong>
+                    <span>Contenido editable y sugerencias para ampliar cada pagina.</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="section-heading">
+                <p class="eyebrow">Series destacadas</p>
+                <h2>Selecciona tu universo favorito</h2>
+            </div>
+
+            <div class="anime-grid">
+                <a class="anime-card" href="one-piece.html">
+                    <figure class="card-media">
+                        <img class="anime-cover-art" src="Assets/img/anime/one-piece-main.jpg" alt="Portada de One Piece">
+                    </figure>
+                    <div class="card-copy">
+                        <h3>One Piece</h3>
+                        <p>Navega por arcos, frutas del diablo, mares, sichibukais, tripulacion y yonkos.</p>
+                        <span class="card-link">Abrir portada</span>
+                    </div>
+                </a>
+
+                <a class="anime-card" href="naruto.html">
+                    <figure class="card-media">
+                        <img class="anime-cover-art" src="Assets/img/anime/naruto-main.jpg" alt="Portada de Naruto">
+                    </figure>
+                    <div class="card-copy">
+                        <h3>Naruto</h3>
+                        <p>Entra a equipo 7, ojos, akatsuki, bijus, hokages y clanes desde una vista tipo wiki.</p>
+                        <span class="card-link">Abrir portada</span>
+                    </div>
+                </a>
+
+                <a class="anime-card" href="bleach.html">
+                    <figure class="card-media">
+                        <img class="anime-cover-art" src="Assets/img/anime/bleach-main.jpg" alt="Portada de Bleach">
+                    </figure>
+                    <div class="card-copy">
+                        <h3>Bleach</h3>
+                        <p>Descubre shinigamis, hollows, vizards, quincys, zanpakutos y bankais con acceso directo.</p>
+                        <span class="card-link">Abrir portada</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>

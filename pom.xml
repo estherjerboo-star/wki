@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ejemplo</groupId>
-    <artifactId>buscador-contactos</artifactId>
+    <artifactId>anime-wiki</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
@@ -34,10 +34,16 @@
             <artifactId>gson</artifactId>
             <version>2.11.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>jakarta.json</artifactId>
+            <version>2.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>buscador-contactos</finalName>
+        <finalName>anime-wiki</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

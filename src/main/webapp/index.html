@@ -2,12 +2,97 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=inicio">
-    <title>Anime World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los tres grandes del anime</title>
+    <link rel="icon" type="image/png" href="Assets/img/logo-circle.png">
+    <link rel="stylesheet" href="Assets/css/dashboard.css">
 </head>
-<body>
-    <script>
-        window.location.replace('inicio');
-    </script>
+<body class="theme-home home-page" data-requires-auth="false" data-page="portal">
+    <header class="wiki-header">
+        <a class="brand" href="index.html" aria-label="Ir al portal principal">
+            <span class="brand-mark">3</span>
+            <span class="brand-copy">
+                <strong>Los tres grandes</strong>
+                <small>Anime wiki fan</small>
+            </span>
+        </a>
+
+        <nav class="wiki-nav" aria-label="Navegacion principal">
+            <a href="index.html" class="is-active">Inicio</a>
+            <a href="login.html">Iniciar sesion</a>
+            <a href="register.html">Crear cuenta</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero-panel hero-panel-stacked">
+            <div class="hero-panel-head">
+                <p class="eyebrow">Portal principal</p>
+                <h1>Los tres grandes del anime</h1>
+            </div>
+
+            <figure class="hero-panel-cover">
+                <img src="Assets/img/anime/home-cover.jpg" alt="Luffy, Naruto e Ichigo en la portada principal">
+            </figure>
+
+            <div class="hero-panel-body">
+                <div class="hero-panel-copy">
+                    <p class="hero-text">
+                        Entra a una portada inspirada en una enciclopedia visual de One Piece, Naruto y Bleach.
+                        Descubre sus mundos, personajes y categorias principales desde una portada visual clara y directa.
+                    </p>
+
+                    <div class="auth-actions">
+                        <a class="button-link primary" href="login.html">Iniciar sesion</a>
+                        <a class="button-link secondary" href="register.html">Crear cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="section-heading">
+                <p class="eyebrow">Series destacadas</p>
+                <h2>Explora el universo que prefieras</h2>
+            </div>
+
+            <div class="anime-grid">
+                <a class="anime-card" href="one-piece.html">
+                    <figure class="card-media">
+                        <img class="anime-cover-art" src="Assets/img/anime/one-piece-main.jpg" alt="Portada de One Piece">
+                    </figure>
+                    <div class="card-copy">
+                        <h3>One Piece</h3>
+                        <p>Arcos, frutas del diablo, mares, sichibukais, tripulacion y yonkos.</p>
+                        <span class="card-link">Abrir portada</span>
+                    </div>
+                </a>
+
+                <a class="anime-card" href="naruto.html">
+                    <figure class="card-media">
+                        <img class="anime-cover-art" src="Assets/img/anime/naruto-main.jpg" alt="Portada de Naruto">
+                    </figure>
+                    <div class="card-copy">
+                        <h3>Naruto</h3>
+                        <p>Equipo 7, ojos, akatsuki, bijus, hokages y clanes.</p>
+                        <span class="card-link">Abrir portada</span>
+                    </div>
+                </a>
+
+                <a class="anime-card" href="bleach.html">
+                    <figure class="card-media">
+                        <img class="anime-cover-art" src="Assets/img/anime/bleach-main.jpg" alt="Portada de Bleach">
+                    </figure>
+                    <div class="card-copy">
+                        <h3>Bleach</h3>
+                        <p>Shinigamis, hollows, vizards, quincys, zanpakutos y bankais.</p>
+                        <span class="card-link">Abrir portada</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="Assets/js/script.js"></script>
 </body>
 </html>

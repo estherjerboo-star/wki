@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de contenido | Los tres grandes del anime</title>
+    <link rel="icon" type="image/png" href="Assets/img/logo-circle.png">
+    <link rel="stylesheet" href="Assets/css/dashboard.css">
+</head>
+<body class="theme-home detail-page" data-requires-auth="true" data-page="admin" style="--page-bg: url('Assets/img/anime/admin-cover.jpg');">
+    <header class="wiki-header">
+        <a class="brand" href="dashboard.html" aria-label="Ir a la portada">
+            <span class="brand-mark">3</span>
+            <span class="brand-copy">
+                <strong>Los tres grandes</strong>
+                <small>Anime wiki fan</small>
+            </span>
+        </a>
+
+        <nav class="wiki-nav" aria-label="Navegacion principal">
+            <a href="dashboard.html">Portada</a>
+            <a href="one-piece.html">One Piece</a>
+            <a href="naruto.html">Naruto</a>
+            <a href="bleach.html">Bleach</a>
+        </nav>
+
+        <div class="user-menu" id="userMenu">
+            <button class="user-profile-button" id="userMenuButton" type="button" aria-expanded="false" aria-haspopup="true">
+                <span class="user-avatar">A</span>
+                <span class="user-details">
+                    <small>Bienvenido</small>
+                    <span id="usernameDisplay">Usuario</span>
+                </span>
+                <span class="user-arrow">+</span>
+            </button>
+
+            <div class="user-dropdown" id="userDropdown"></div>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="detail-hero horizontal-detail">
+            <figure class="detail-cover horizontal-cover">
+                <img src="Assets/img/anime/admin-cover.jpg" alt="Panel de gestion de contenido">
+            </figure>
+
+            <div class="detail-copy">
+                <p class="eyebrow">Panel abierto con control por roles</p>
+                <h1>Gestion de contenido y usuarios</h1>
+                <p>La wiki es publica para todo el mundo, pero aqui se controla quien puede escribir. El administrador puede editar, meter y borrar contenido, y tambien borrar usuarios. El usuario editor puede modificar y meter contenido.</p>
+                <a class="back-link" href="dashboard.html">Volver a la portada principal</a>
+            </div>
+        </section>
+
+        <section class="stats-strip" id="statsStrip"></section>
+
+        <section class="admin-grid">
+            <article class="detail-panel admin-panel">
+                <div>
+                    <p class="eyebrow">Nuevo contenido</p>
+                    <h2>Publicar o editar una entrada</h2>
+                </div>
+
+                <form class="admin-form" id="adminContentForm">
+                    <input type="hidden" id="adminEntryId">
+
+                    <label class="field">
+                        <span>Pagina</span>
+                        <select id="adminPageKey" required></select>
+                    </label>
+
+                    <label class="field wide">
+                        <span>Titulo</span>
+                        <input id="adminEntryTitle" type="text" placeholder="Titulo del contenido" required>
+                    </label>
+
+                    <label class="field wide">
+                        <span>Contenido</span>
+                        <textarea id="adminEntryBody" rows="7" placeholder="Escribe aqui el contenido que quieres publicar." required></textarea>
+                    </label>
+
+                    <div class="form-inline-actions">
+                        <button class="button-link primary" type="submit" id="adminSaveButton">Guardar contenido</button>
+                        <button class="button-link secondary" type="button" id="adminCancelButton" hidden>Cancelar edicion</button>
+                    </div>
+                </form>
+
+                <div>
+                    <p class="eyebrow">Entradas publicadas</p>
+                    <h2>Contenido de la comunidad</h2>
+                </div>
+                <div class="admin-list" id="adminContentList"></div>
+            </article>
+
+            <aside class="detail-panel admin-panel">
+                <div>
+                    <p class="eyebrow">Solicitudes</p>
+                    <h2>Mensajes de usuarios registrados</h2>
+                    <p class="admin-side-copy">Los usuarios normales no pueden editar contenido, pero desde cada pagina pueden enviar sugerencias y solicitudes al administrador y al usuario editor.</p>
+                </div>
+                <div class="admin-list" id="adminRequestsList"></div>
+
+                <div>
+                    <p class="eyebrow">Usuarios</p>
+                    <h2>Roles y cuentas</h2>
+                    <p class="admin-side-copy">Solo el administrador puede borrar usuarios o cambiar su rol. El rol `usuario` solo puede leer y enviar solicitudes, `usuario editor` puede meter y modificar contenido, y `administrador` controla todo.</p>
+                </div>
+                <div class="admin-list" id="adminUsersList"></div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="Assets/js/auth-helper.js"></script>
+    <script src="Assets/js/admin.js"></script>
+</body>
+</html>

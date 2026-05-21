@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesion | Los tres grandes del anime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Assets/img/logo-circle.png">
+    <link rel="stylesheet" href="Assets/css/login.css">
+</head>
+<body class="auth-manga-page">
+    <div class="login-container">
+        <section class="login-box">
+            <p class="login-kicker">Enciclopedia anime</p>
+            <h1>Los tres grandes del anime</h1>
+        <p>Inicia sesion para entrar a la portada de One Piece, Naruto y Bleach.</p>
+
+            <form id="loginForm" method="POST">
+                <div class="input-group">
+                    <label for="login">Correo o usuario</label>
+                    <input type="text" id="login" placeholder="Correo o nombre de usuario" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Contrasena</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+
+                <button type="submit" class="btn-login">Iniciar sesion</button>
+
+                <p id="error" class="error-text"></p>
+
+                <div class="extra-links">
+                    <a id="forgotPasswordLink" href="forgot-password.html">Olvidaste tu contrasena?</a>
+                    <a href="register.html">Crear cuenta</a>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="Assets/js/auth-helper.js"></script>
+    <script src="Assets/js/login.js"></script>
+</body>
+</html>

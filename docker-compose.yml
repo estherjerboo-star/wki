@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jakartaee_app
+    container_name: anime_wiki_app
     ports:
       - "8080:8080"
     depends_on:
@@ -12,21 +12,24 @@ services:
     environment:
       DB_HOST: mysql
       DB_PORT: 3306
-      DB_NAME: bd1
+      DB_NAME: anime_wiki
       DB_USER: root
       DB_PASSWORD: root
+      APP_DISABLE_CACHE: "true"
+    volumes:
+      - ./src/main/webapp:/opt/dev-webapp:ro
     networks:
-      - red_app
+      - anime_wiki_net
 
   mysql:
     image: mysql:8.0
-    container_name: mysql_bd1
+    container_name: anime_wiki_mysql
     restart: unless-stopped
     ports:
       - "3307:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: bd1
+      MYSQL_DATABASE: anime_wiki
     volumes:
       - mysql_data:/var/lib/mysql
       - ./mysql/init:/docker-entrypoint-initdb.d
@@ -36,11 +39,11 @@ services:
       timeout: 5s
       retries: 10
     networks:
-      - red_app
+      - anime_wiki_net
 
   phpmyadmin:
     image: phpmyadmin:latest
-    container_name: phpmyadmin_bd1
+    container_name: anime_wiki_phpmyadmin
     restart: unless-stopped
     ports:
       - "8081:80"
@@ -52,11 +55,11 @@ services:
     depends_on:
       - mysql
     networks:
-      - red_app
+      - anime_wiki_net
 
 volumes:
   mysql_data:
 
 networks:
-  red_app:
+  anime_wiki_net:
     driver: bridge
