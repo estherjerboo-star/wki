@@ -12,7 +12,6 @@ import java.util.List;
 public class ContenidoWikiModel {
 
     public List<ContenidoEntry> listarContenido(String pageKey) throws Exception {
-        ensureTables();
         String sql = "SELECT id, page_key, titulo, cuerpo, autor_nombre, autor_email, autor_rol, creado_en, actualizado_en " +
                 "FROM contenido_wiki " +
                 (isBlank(pageKey) ? "" : "WHERE page_key = ? ") +
@@ -35,7 +34,6 @@ public class ContenidoWikiModel {
     }
 
     public ContenidoEntry guardarContenido(ContenidoEntry entry) throws Exception {
-        ensureTables();
         Integer id = parseId(entry.id);
         String autorRol = normalizeRole(entry.authorRole);
 
@@ -77,7 +75,6 @@ public class ContenidoWikiModel {
     }
 
     public boolean borrarContenido(int id) throws Exception {
-        ensureTables();
         try (Connection con = ConexionBD.getConnection();
              PreparedStatement ps = con.prepareStatement("DELETE FROM contenido_wiki WHERE id = ?")) {
             ps.setInt(1, id);
@@ -86,7 +83,6 @@ public class ContenidoWikiModel {
     }
 
     public List<ContenidoRequest> listarSolicitudes(String pageKey) throws Exception {
-        ensureTables();
         String sql = "SELECT id, page_key, titulo, mensaje, remitente_nombre, remitente_email, remitente_rol, estado, creado_en " +
                 "FROM solicitudes_contenido " +
                 (isBlank(pageKey) ? "" : "WHERE page_key = ? ") +
@@ -109,7 +105,6 @@ public class ContenidoWikiModel {
     }
 
     public ContenidoRequest crearSolicitud(ContenidoRequest request) throws Exception {
-        ensureTables();
         String sql = "INSERT INTO solicitudes_contenido (page_key, titulo, mensaje, remitente_nombre, remitente_email, remitente_rol, estado) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection con = ConexionBD.getConnection();
              PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
@@ -132,7 +127,6 @@ public class ContenidoWikiModel {
     }
 
     public boolean actualizarEstadoSolicitud(int id, String status) throws Exception {
-        ensureTables();
         try (Connection con = ConexionBD.getConnection();
              PreparedStatement ps = con.prepareStatement("UPDATE solicitudes_contenido SET estado = ? WHERE id = ?")) {
             ps.setString(1, normalizeStatus(status));
@@ -142,7 +136,6 @@ public class ContenidoWikiModel {
     }
 
     public boolean borrarSolicitud(int id) throws Exception {
-        ensureTables();
         try (Connection con = ConexionBD.getConnection();
              PreparedStatement ps = con.prepareStatement("DELETE FROM solicitudes_contenido WHERE id = ?")) {
             ps.setInt(1, id);
@@ -208,34 +201,6 @@ public class ContenidoWikiModel {
         request.status = statusToClient(rs.getString("estado"));
         request.createdAt = toIso(rs.getTimestamp("creado_en"));
         return request;
-    }
-
-    private void ensureTables() throws Exception {
-        try (Connection con = ConexionBD.getConnection();
-             Statement st = con.createStatement()) {
-            st.executeUpdate("CREATE TABLE IF NOT EXISTS contenido_wiki (" +
-                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
-                    "page_key VARCHAR(100) NOT NULL, " +
-                    "titulo VARCHAR(150) NOT NULL, " +
-                    "cuerpo TEXT NOT NULL, " +
-                    "autor_id INT NULL, " +
-                    "autor_nombre VARCHAR(50) NOT NULL, " +
-                    "autor_email VARCHAR(100) NOT NULL, " +
-                    "autor_rol ENUM('USER', 'EDITOR', 'ADMIN') NOT NULL DEFAULT 'USER', " +
-                    "creado_en TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, " +
-                    "actualizado_en TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)");
-            st.executeUpdate("CREATE TABLE IF NOT EXISTS solicitudes_contenido (" +
-                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
-                    "page_key VARCHAR(100) NOT NULL, " +
-                    "titulo VARCHAR(150) NOT NULL, " +
-                    "mensaje TEXT NOT NULL, " +
-                    "remitente_id INT NULL, " +
-                    "remitente_nombre VARCHAR(50) NOT NULL, " +
-                    "remitente_email VARCHAR(100) NOT NULL, " +
-                    "remitente_rol ENUM('USER', 'EDITOR', 'ADMIN') NOT NULL DEFAULT 'USER', " +
-                    "estado ENUM('PENDIENTE', 'REVISADA') NOT NULL DEFAULT 'PENDIENTE', " +
-                    "creado_en TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)");
-        }
     }
 
     private String toIso(Timestamp timestamp) {
