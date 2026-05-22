@@ -61,7 +61,7 @@ public class SolicitudesContenidoController extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            response.getWriter().print("{\"ok\":false,\"mensaje\":\"No se pudo guardar la solicitud\"}");
+            response.getWriter().print(gson.toJson(new ErrorResponse(false, e.getClass().getSimpleName(), e.getMessage())));
         }
     }
 
