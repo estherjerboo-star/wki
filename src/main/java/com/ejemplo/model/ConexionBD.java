@@ -34,7 +34,7 @@ public class ConexionBD {
                 System.getenv("MYSQL_PRIVATE_URL"),
                 System.getenv("DATABASE_URL"));
 
-        if (railwayUrl != null) {
+        if (!isBlank(railwayUrl)) {
             DatabaseConfig parsed = parseDatabaseUrl(railwayUrl);
             if (parsed != null) {
                 return parsed;
@@ -82,11 +82,15 @@ public class ConexionBD {
                 return value;
             }
         }
-        return "";
+        return null;
     }
 
     private static String decode(String value) {
         return URLDecoder.decode(value, StandardCharsets.UTF_8);
+    }
+
+    private static boolean isBlank(String value) {
+        return value == null || value.isBlank();
     }
 
     private static class DatabaseConfig {
