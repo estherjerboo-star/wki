@@ -42,6 +42,94 @@ function getCurrentUserEmail() {
   return localStorage.getItem(USER_EMAIL_STORAGE_KEY) || "";
 }
 
+function getApiBase() {
+  return window.location.protocol === "file:"
+    ? "http://localhost:8080"
+    : window.location.origin;
+}
+
+async function safeJson(response) {
+  try {
+    return await response.json();
+  } catch (error) {
+    return null;
+  }
+}
+
+async function syncAdminStateFromServer() {
+  try {
+    const [contentResponse, requestsResponse] = await Promise.all([
+      fetch(`${getApiBase()}/api/content`),
+      fetch(`${getApiBase()}/api/requests`)
+    ]);
+
+    if (contentResponse.ok) {
+      const content = await safeJson(contentResponse);
+      if (Array.isArray(content)) {
+        saveEntries(content);
+      }
+    }
+
+    if (requestsResponse.ok) {
+      const requests = await safeJson(requestsResponse);
+      if (Array.isArray(requests)) {
+        saveRequests(requests);
+      }
+    }
+  } catch (error) {
+    // Si se abre sin servidor, el panel sigue usando el respaldo local.
+  }
+}
+
+async function persistEntry(entry) {
+  try {
+    const response = await fetch(`${getApiBase()}/api/content`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(entry)
+    });
+    const saved = await safeJson(response);
+    if (response.ok && saved && saved.id) {
+      return saved;
+    }
+  } catch (error) {
+    // Respaldo local si falla el servidor.
+  }
+  return entry;
+}
+
+async function removeEntryRemote(entryId) {
+  try {
+    await fetch(`${getApiBase()}/api/content?id=${encodeURIComponent(entryId)}`, {
+      method: "DELETE"
+    });
+  } catch (error) {
+    // Respaldo local si falla el servidor.
+  }
+}
+
+async function persistRequestStatus(requestId, status) {
+  try {
+    await fetch(`${getApiBase()}/api/requests`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "status", id: requestId, status })
+    });
+  } catch (error) {
+    // Respaldo local si falla el servidor.
+  }
+}
+
+async function removeRequestRemote(requestId) {
+  try {
+    await fetch(`${getApiBase()}/api/requests?id=${encodeURIComponent(requestId)}`, {
+      method: "DELETE"
+    });
+  } catch (error) {
+    // Respaldo local si falla el servidor.
+  }
+}
+
 function canDeleteContent() {
   return getCurrentRole() === "admin";
 }
@@ -149,6 +237,17 @@ function upsertEntry(entry) {
 
 function deleteEntry(entryId) {
   saveEntries(readEntries().filter((entry) => String(entry.id) !== String(entryId)));
+}
+
+function replaceEntry(previousId, entry) {
+  const entries = readEntries().filter((item) => String(item.id) !== String(previousId));
+  const index = entries.findIndex((item) => String(item.id) === String(entry.id));
+  if (index >= 0) {
+    entries[index] = entry;
+  } else {
+    entries.unshift(entry);
+  }
+  saveEntries(entries);
 }
 
 function ensureAccess() {
@@ -398,7 +497,7 @@ function initContentForm() {
   const cancelButton = document.getElementById("adminCancelButton");
   const contentList = document.getElementById("adminContentList");
 
-  form?.addEventListener("submit", (event) => {
+  form?.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const id = document.getElementById("adminEntryId").value;
@@ -422,7 +521,8 @@ function initContentForm() {
       updatedAt: new Date().toISOString()
     };
 
-    upsertEntry(entry);
+    const savedEntry = await persistEntry(entry);
+    replaceEntry(entry.id, savedEntry);
     resetForm();
     renderStats();
     renderContentList();
@@ -430,7 +530,7 @@ function initContentForm() {
 
   cancelButton?.addEventListener("click", resetForm);
 
-  contentList?.addEventListener("click", (event) => {
+  contentList?.addEventListener("click", async (event) => {
     const editButton = event.target.closest("[data-edit-entry]");
     const deleteButton = event.target.closest("[data-delete-entry]");
 
@@ -448,6 +548,7 @@ function initContentForm() {
     }
 
     if (deleteButton && canDeleteContent()) {
+      await removeEntryRemote(deleteButton.dataset.deleteEntry);
       deleteEntry(deleteButton.dataset.deleteEntry);
       renderStats();
       renderContentList();
@@ -492,17 +593,19 @@ function initRequestsPanel() {
   const requestsList = document.getElementById("adminRequestsList");
   if (!requestsList) return;
 
-  requestsList.addEventListener("click", (event) => {
+  requestsList.addEventListener("click", async (event) => {
     const toggleButton = event.target.closest("[data-toggle-request]");
     const deleteButton = event.target.closest("[data-delete-request]");
 
     if (toggleButton) {
+      await persistRequestStatus(toggleButton.dataset.toggleRequest, toggleButton.dataset.nextStatus || "reviewed");
       updateRequestStatus(toggleButton.dataset.toggleRequest, toggleButton.dataset.nextStatus || "reviewed");
       renderStats();
       renderRequests();
     }
 
     if (deleteButton) {
+      await removeRequestRemote(deleteButton.dataset.deleteRequest);
       deleteRequest(deleteButton.dataset.deleteRequest);
       renderStats();
       renderRequests();
@@ -510,11 +613,12 @@ function initRequestsPanel() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   if (!ensureAccess()) {
     return;
   }
 
+  await syncAdminStateFromServer();
   injectSiteFooter();
   renderHeader();
   initScrollTopButton();

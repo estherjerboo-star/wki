@@ -111,6 +111,89 @@ function getCurrentUserEmail() {
   return localStorage.getItem(USER_EMAIL_STORAGE_KEY) || "";
 }
 
+function getApiBase() {
+  return window.location.protocol === "file:"
+    ? "http://localhost:8080"
+    : window.location.origin;
+}
+
+async function safeJson(response) {
+  try {
+    return await response.json();
+  } catch (error) {
+    return null;
+  }
+}
+
+async function syncCommunityStateFromServer() {
+  try {
+    const [contentResponse, requestsResponse] = await Promise.all([
+      fetch(`${getApiBase()}/api/content`),
+      fetch(`${getApiBase()}/api/requests`)
+    ]);
+
+    if (contentResponse.ok) {
+      const content = await safeJson(contentResponse);
+      if (Array.isArray(content)) {
+        saveContentEntries(content);
+      }
+    }
+
+    if (requestsResponse.ok) {
+      const requests = await safeJson(requestsResponse);
+      if (Array.isArray(requests)) {
+        saveContentRequests(requests);
+      }
+    }
+  } catch (error) {
+    // Si se abre sin servidor, se mantiene el respaldo local.
+  }
+}
+
+async function persistContentEntry(entry) {
+  try {
+    const response = await fetch(`${getApiBase()}/api/content`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(entry)
+    });
+    const saved = await safeJson(response);
+    if (response.ok && saved && saved.id) {
+      return saved;
+    }
+  } catch (error) {
+    // El localStorage queda como respaldo si el servidor no responde.
+  }
+  return entry;
+}
+
+async function removeContentEntryRemote(entryId) {
+  try {
+    await fetch(`${getApiBase()}/api/content?id=${encodeURIComponent(entryId)}`, {
+      method: "DELETE"
+    });
+  } catch (error) {
+    // Borrado local como respaldo.
+  }
+}
+
+async function persistContentRequest(request) {
+  try {
+    const response = await fetch(`${getApiBase()}/api/requests`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(request)
+    });
+    const saved = await safeJson(response);
+    if (response.ok && saved && saved.id) {
+      return saved;
+    }
+  } catch (error) {
+    // El localStorage queda como respaldo si el servidor no responde.
+  }
+  return request;
+}
+
 function canManageContent() {
   return isAuthenticated() && ["admin", "editor"].includes(getCurrentRole());
 }
@@ -169,6 +252,7 @@ function createContentRequest(request) {
   const requests = readContentRequests();
   requests.unshift(request);
   saveContentRequests(requests);
+  return request;
 }
 
 function upsertContentEntry(entry) {
@@ -186,6 +270,19 @@ function upsertContentEntry(entry) {
 
 function deleteContentEntry(entryId) {
   saveContentEntries(readContentEntries().filter((entry) => String(entry.id) !== String(entryId)));
+}
+
+function replaceContentEntry(previousId, entry) {
+  const entries = readContentEntries().filter((item) => String(item.id) !== String(previousId));
+  const index = entries.findIndex((item) => String(item.id) === String(entry.id));
+
+  if (index >= 0) {
+    entries[index] = entry;
+  } else {
+    entries.unshift(entry);
+  }
+
+  saveContentEntries(entries);
 }
 
 function escapeHTML(value) {
@@ -697,6 +794,19 @@ function buildContentManagerSection(pageKey) {
     <article class="detail-panel community-panel">
       <div class="community-header">
         <div>
+          <p class="eyebrow">Contenido publicado</p>
+          <h2>Aportes añadidos a esta pagina</h2>
+          <p class="community-copy">
+            Aqui aparece la informacion que el administrador o un usuario editor ya ha metido en esta seccion.
+          </p>
+        </div>
+      </div>
+      <div class="content-list" id="contentEntriesList"></div>
+    </article>
+
+    <article class="detail-panel community-panel">
+      <div class="community-header">
+        <div>
           <p class="eyebrow">Solicitudes</p>
           <h2>Enviar una idea para esta pagina</h2>
           <p class="community-copy">
@@ -735,6 +845,7 @@ function buildContentManagerSection(pageKey) {
 
   anchor.insertAdjacentElement("afterend", section);
   initContentRequestForm(pageKey);
+  renderContentEntries(pageKey);
   renderContentRequests(pageKey);
 }
 
@@ -754,7 +865,7 @@ function renderContentEntries(pageKey) {
     list.innerHTML = `
       <div class="empty-community">
         <strong>Aun no hay contenido extra en esta pagina</strong>
-        <span>${canManageContent() ? "Puedes publicar el primer aporte desde el formulario superior." : "Inicia sesion con un rol editor o administrador si quieres publicar."}</span>
+        <span>${canManageContent() ? "Puedes publicar el primer aporte desde el formulario superior." : "Cuando el administrador o un editor publique contenido para esta pagina, aparecera aqui."}</span>
       </div>
     `;
     return;
@@ -830,7 +941,7 @@ function initContentEditor(pageKey) {
 
   if (!form || !list) return;
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     if (!canManageContent()) {
@@ -858,14 +969,15 @@ function initContentEditor(pageKey) {
       updatedAt: new Date().toISOString()
     };
 
-    upsertContentEntry(entry);
+    const savedEntry = await persistContentEntry(entry);
+    replaceContentEntry(entry.id, savedEntry);
     resetContentForm();
     renderContentEntries(pageKey);
   });
 
   cancelButton?.addEventListener("click", resetContentForm);
 
-  list.addEventListener("click", (event) => {
+  list.addEventListener("click", async (event) => {
     const editButton = event.target.closest("[data-edit-entry]");
     const deleteButton = event.target.closest("[data-delete-entry]");
 
@@ -882,6 +994,7 @@ function initContentEditor(pageKey) {
     }
 
     if (deleteButton && canDeleteContent()) {
+      await removeContentEntryRemote(deleteButton.dataset.deleteEntry);
       deleteContentEntry(deleteButton.dataset.deleteEntry);
       renderContentEntries(pageKey);
       resetContentForm();
@@ -893,7 +1006,7 @@ function initContentRequestForm(pageKey) {
   const form = document.getElementById("contentRequestForm");
   if (!form || !canSendContentRequests()) return;
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const title = document.getElementById("contentRequestTitle").value.trim();
@@ -901,7 +1014,7 @@ function initContentRequestForm(pageKey) {
 
     if (!title || !body) return;
 
-    createContentRequest({
+    const request = createContentRequest({
       id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
       pageKey,
       title,
@@ -913,6 +1026,12 @@ function initContentRequestForm(pageKey) {
       createdAt: new Date().toISOString(),
       status: "pending"
     });
+    const savedRequest = await persistContentRequest(request);
+    if (String(savedRequest.id) !== String(request.id)) {
+      const requests = readContentRequests().filter((item) => String(item.id) !== String(request.id));
+      requests.unshift(savedRequest);
+      saveContentRequests(requests);
+    }
 
     form.reset();
     renderContentRequests(pageKey);
@@ -938,11 +1057,12 @@ function roleLabel(role) {
   return labels[String(role || "user").toLowerCase()] || "Usuario";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   if (!ensurePageAccess()) {
     return;
   }
 
+  await syncCommunityStateFromServer();
   setSiteFavicon();
   injectSiteFooter();
   renderUserMenu();
