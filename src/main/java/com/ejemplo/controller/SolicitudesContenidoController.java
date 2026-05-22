@@ -30,7 +30,7 @@ public class SolicitudesContenidoController extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            response.getWriter().print("[]");
+            response.getWriter().print(gson.toJson(new ErrorResponse(false, e.getClass().getSimpleName(), e.getMessage())));
         }
     }
 
@@ -92,5 +92,17 @@ public class SolicitudesContenidoController extends HttpServlet {
 
     private boolean isBlank(String value) {
         return value == null || value.trim().isEmpty();
+    }
+
+    private static class ErrorResponse {
+        private final boolean ok;
+        private final String error;
+        private final String message;
+
+        private ErrorResponse(boolean ok, String error, String message) {
+            this.ok = ok;
+            this.error = error;
+            this.message = message;
+        }
     }
 }
