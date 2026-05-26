@@ -1,0 +1,87 @@
+<svg width="1440" height="1100" viewBox="0 0 1440 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 320) rotate(90) scale(820 1040)">
+      <stop stop-color="#1A2A3B"/>
+      <stop offset="0.55" stop-color="#07101A"/>
+      <stop offset="1" stop-color="#04070D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F2CF78"/>
+      <stop offset="1" stop-color="#D9B15F"/>
+    </linearGradient>
+    <linearGradient id="mangaLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#263A4B"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <linearGradient id="mangaCenter" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4A2412"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <linearGradient id="mangaRight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#143846"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="1100" fill="#04070D"/>
+  <rect x="0" y="0" width="480" height="1100" fill="url(#mangaLeft)" opacity="0.58"/>
+  <rect x="480" y="0" width="480" height="1100" fill="url(#mangaCenter)" opacity="0.46"/>
+  <rect x="960" y="0" width="480" height="1100" fill="url(#mangaRight)" opacity="0.52"/>
+  <rect width="1440" height="1100" fill="url(#bg)" opacity="0.9"/>
+  <rect width="1440" height="1100" fill="#050A11" opacity="0.68"/>
+
+  <g opacity="0.18">
+    <circle cx="214" cy="180" r="96" stroke="#F2CF78" stroke-width="2"/>
+    <circle cx="1148" cy="216" r="128" stroke="#7AC7DD" stroke-width="2"/>
+    <circle cx="746" cy="890" r="145" stroke="#F18F3B" stroke-width="2"/>
+    <path d="M90 820C250 730 372 750 524 650" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M934 152C1078 262 1208 310 1364 280" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.74">
+    <circle cx="720" cy="74" r="28" fill="#09111B" stroke="#C5A65C" stroke-opacity="0.32"/>
+    <circle cx="720" cy="74" r="20" fill="url(#gold)"/>
+    <circle cx="713" cy="68" r="5" fill="#132130"/>
+    <circle cx="727" cy="68" r="5" fill="#132130"/>
+    <path d="M711 80C716 87 724 87 730 80" stroke="#132130" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="490" y="116" width="460" height="858" rx="24" fill="#09111B" fill-opacity="0.88" stroke="#C5A65C" stroke-opacity="0.32"/>
+
+    <text x="540" y="180" fill="#D9B15F" font-family="Inter" font-size="15" font-weight="800" letter-spacing="3">REGISTRO ANIME</text>
+    <text x="540" y="244" fill="#F5EFE3" font-family="Playfair Display" font-size="50" font-weight="700">Crea tu cuenta</text>
+
+    <text x="540" y="298" fill="#D9CFBA" font-family="Inter" font-size="17">
+      <tspan x="540" dy="0">Registra tu usuario para entrar directamente</tspan>
+      <tspan x="540" dy="28">a la wiki de One Piece, Naruto y Bleach.</tspan>
+    </text>
+
+    <text x="540" y="380" fill="#D9CFBA" font-family="Inter" font-size="15" font-weight="700">Usuario</text>
+    <rect x="540" y="398" width="360" height="56" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <text x="562" y="433" fill="#8F8A80" font-family="Inter" font-size="16">Tu nombre de usuario</text>
+
+    <text x="540" y="500" fill="#D9CFBA" font-family="Inter" font-size="15" font-weight="700">Correo electronico</text>
+    <rect x="540" y="518" width="360" height="56" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <text x="562" y="553" fill="#8F8A80" font-family="Inter" font-size="16">tu@correo.com</text>
+
+    <text x="540" y="620" fill="#D9CFBA" font-family="Inter" font-size="15" font-weight="700">Contrasena</text>
+    <rect x="540" y="638" width="360" height="56" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <text x="562" y="673" fill="#8F8A80" font-family="Inter" font-size="16">********</text>
+
+    <text x="540" y="740" fill="#D9CFBA" font-family="Inter" font-size="15" font-weight="700">Confirmar contrasena</text>
+    <rect x="540" y="758" width="360" height="56" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <text x="562" y="793" fill="#8F8A80" font-family="Inter" font-size="16">********</text>
+
+    <rect x="540" y="852" width="360" height="58" rx="14" fill="url(#gold)"/>
+    <text x="648" y="888" fill="#1B1610" font-family="Inter" font-size="16" font-weight="800">Crear cuenta y entrar</text>
+
+    <text x="540" y="948" fill="#F2CF78" font-family="Inter" font-size="15">Ya tienes cuenta? Inicia sesion</text>
+    <text x="798" y="948" fill="#F2CF78" font-family="Inter" font-size="15">Volver al inicio</text>
+  </g>
+
+  <text x="720" y="1040" fill="#D9CFBA" font-family="Inter" font-size="14" text-anchor="middle" opacity="0.75">Pantalla de registro de usuario</text>
+</svg>

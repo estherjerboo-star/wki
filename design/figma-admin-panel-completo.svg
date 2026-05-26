@@ -1,0 +1,136 @@
+<svg width="1080" height="1540" viewBox="0 0 1080 1540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(540 60) rotate(90) scale(920 1050)">
+      <stop stop-color="#172536"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#D6A84F"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="153" y1="150" x2="928" y2="354" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20251F"/>
+      <stop offset="0.45" stop-color="#1C252D"/>
+      <stop offset="1" stop-color="#102231"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1540" fill="#E6E6E6"/>
+  <rect x="26" y="12" width="1028" height="1504" fill="url(#bg)"/>
+  <rect x="26" y="12" width="1028" height="1504" fill="#03070B" opacity="0.25"/>
+
+  <rect x="42" y="25" width="996" height="62" rx="14" fill="#050A10" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <circle cx="80" cy="56" r="18" fill="#0D1722" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="75" y="62" fill="#D6A84F" font-family="Inter" font-size="15" font-weight="800">3</text>
+  <text x="116" y="47" fill="#F4EFE4" font-family="Playfair Display" font-size="16" font-weight="700">Los tres grandes</text>
+  <text x="116" y="66" fill="#D0C5B0" font-family="Inter" font-size="10">Anime wiki fan</text>
+
+  <g font-family="Inter" font-size="11" font-weight="600">
+    <text x="378" y="59" fill="#D0C5B0">Portada</text>
+    <text x="454" y="59" fill="#D0C5B0">One Piece</text>
+    <text x="537" y="59" fill="#D0C5B0">Naruto</text>
+    <text x="607" y="59" fill="#D0C5B0">Bleach</text>
+  </g>
+
+  <rect x="826" y="35" width="166" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <circle cx="847" cy="54" r="14" fill="url(#gold)"/>
+  <text x="842" y="59" fill="#101214" font-family="Inter" font-size="13" font-weight="800">A</text>
+  <text x="875" y="49" fill="#D0C5B0" font-family="Inter" font-size="9">Bienvenido</text>
+  <text x="875" y="63" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Usuario</text>
+  <text x="968" y="60" fill="#D0C5B0" font-family="Inter" font-size="15" font-weight="800">+</text>
+
+  <g filter="url(#shadow)">
+    <rect x="116" y="114" width="848" height="298" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="153" y="148" width="774" height="204" rx="14" fill="url(#hero)"/>
+    <circle cx="522" cy="250" r="62" fill="#5E4B3C" stroke="#D6A84F" stroke-opacity="0.55" stroke-width="1.5"/>
+    <text x="506" y="329" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.2">ANIME</text>
+  </g>
+
+  <text x="116" y="444" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.8">PANEL ABIERTO CON CONTROL POR ROLES</text>
+  <text x="116" y="486" fill="#F4EFE4" font-family="Playfair Display" font-size="42" font-weight="700">Gestion de contenido y usuarios</text>
+  <text x="116" y="526" fill="#D0C5B0" font-family="Inter" font-size="13">
+    <tspan x="116" dy="0">La wiki es publica para todo el mundo, pero aqui se controla quien puede escribir.</tspan>
+    <tspan x="116" dy="20">El administrador controla contenido y usuarios, y el usuario editor puede meter y modificar contenido.</tspan>
+  </text>
+  <text x="116" y="575" fill="#D6A84F" font-family="Inter" font-size="13" font-weight="800">Volver a la portada principal</text>
+
+  <rect x="116" y="598" width="280" height="102" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="138" y="640" fill="#D6A84F" font-family="Playfair Display" font-size="36" font-weight="700">3</text>
+  <text x="138" y="676" fill="#D0C5B0" font-family="Inter" font-size="12">Roles del sistema</text>
+  <rect x="414" y="598" width="280" height="102" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="436" y="640" fill="#D6A84F" font-family="Playfair Display" font-size="36" font-weight="700">2</text>
+  <text x="436" y="676" fill="#D0C5B0" font-family="Inter" font-size="12">Columnas de gestion</text>
+  <rect x="712" y="598" width="280" height="102" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="734" y="640" fill="#D6A84F" font-family="Playfair Display" font-size="36" font-weight="700">1</text>
+  <text x="734" y="676" fill="#D0C5B0" font-family="Inter" font-size="12">Panel central de control</text>
+
+  <g filter="url(#shadow)">
+    <rect x="102" y="720" width="512" height="778" rx="18" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="126" y="763" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.8">NUEVO CONTENIDO</text>
+    <text x="126" y="803" fill="#F4EFE4" font-family="Playfair Display" font-size="32" font-weight="700">Publicar o editar una entrada</text>
+
+    <rect x="126" y="834" width="462" height="330" rx="16" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="148" y="876" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Pagina</text>
+    <rect x="148" y="895" width="398" height="39" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="168" y="920" fill="#8F8A80" font-family="Inter" font-size="11">Selecciona una pagina</text>
+
+    <text x="148" y="966" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Titulo</text>
+    <rect x="148" y="985" width="398" height="39" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="168" y="1010" fill="#8F8A80" font-family="Inter" font-size="11">Titulo del contenido</text>
+
+    <text x="148" y="1056" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Contenido</text>
+    <rect x="148" y="1075" width="398" height="108" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="168" y="1101" fill="#8F8A80" font-family="Inter" font-size="11">Escribe aqui el contenido que quieres publicar.</text>
+
+    <rect x="148" y="1208" width="128" height="34" rx="17" fill="url(#gold)"/>
+    <text x="170" y="1230" fill="#101214" font-family="Inter" font-size="11" font-weight="800">Guardar contenido</text>
+    <rect x="292" y="1208" width="112" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="313" y="1230" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Cancelar edicion</text>
+
+    <text x="126" y="1288" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.8">ENTRADAS PUBLICADAS</text>
+    <text x="126" y="1326" fill="#F4EFE4" font-family="Playfair Display" font-size="30" font-weight="700">Contenido de la comunidad</text>
+
+    <rect x="126" y="1356" width="462" height="78" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="148" y="1386" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Entrada publicada</text>
+    <text x="148" y="1411" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para item de contenido aprobado o en edicion.</text>
+
+    <rect x="126" y="1454" width="462" height="78" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="148" y="1484" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Entrada publicada</text>
+    <text x="148" y="1509" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para otro bloque de comunidad.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="638" y="720" width="342" height="778" rx="18" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="662" y="763" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.8">SOLICITUDES</text>
+    <text x="662" y="803" fill="#F4EFE4" font-family="Playfair Display" font-size="31" font-weight="700">Mensajes de usuarios</text>
+    <text x="662" y="839" fill="#D0C5B0" font-family="Inter" font-size="12">
+      <tspan x="662" dy="0">Los usuarios normales no pueden editar contenido, pero desde</tspan>
+      <tspan x="662" dy="20">cada pagina pueden enviar sugerencias y solicitudes.</tspan>
+    </text>
+
+    <rect x="662" y="880" width="294" height="90" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="684" y="915" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Solicitud recibida</text>
+    <text x="684" y="944" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para mensaje enviado por un usuario.</text>
+    <rect x="662" y="990" width="294" height="90" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="684" y="1025" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Solicitud recibida</text>
+    <text x="684" y="1054" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para otra propuesta pendiente.</text>
+
+    <text x="662" y="1148" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.8">USUARIOS</text>
+    <text x="662" y="1186" fill="#F4EFE4" font-family="Playfair Display" font-size="31" font-weight="700">Roles y cuentas</text>
+    <text x="662" y="1221" fill="#D0C5B0" font-family="Inter" font-size="12">
+      <tspan x="662" dy="0">Solo el administrador puede borrar usuarios o cambiar su rol.</tspan>
+      <tspan x="662" dy="20">`usuario` lee y envia solicitudes; editor modifica contenido.</tspan>
+    </text>
+
+    <rect x="662" y="1278" width="294" height="90" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="684" y="1313" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Usuario / Rol</text>
+    <text x="684" y="1342" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para cuenta y rol actual.</text>
+    <rect x="662" y="1388" width="294" height="90" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="684" y="1423" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Usuario / Rol</text>
+    <text x="684" y="1452" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para otra cuenta registrada.</text>
+  </g>
+</svg>

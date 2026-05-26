@@ -1,0 +1,72 @@
+<svg width="390" height="1250" viewBox="0 0 390 1250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(195 0) rotate(90) scale(760 430)">
+      <stop stop-color="#203044"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#E2AA2F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="1250" fill="#E6E6E6"/>
+  <rect width="390" height="1250" fill="url(#bg)"/>
+  <rect width="390" height="1250" fill="#03070B" opacity="0.25"/>
+
+  <rect x="4" y="20" width="382" height="520" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="60" fill="#E2AA2F" font-family="Inter" font-size="11" font-weight="800" letter-spacing="3">SOLICITUDES</text>
+  <text x="19" y="100" fill="#F4EFE4" font-family="Playfair Display" font-size="28" font-weight="800">Enviar una idea para esta pagina</text>
+  <text x="19" y="140" fill="#D0C5B0" font-family="Inter" font-size="13">
+    <tspan x="19" dy="0">Como usuario registrado puedes mandar un mensaje al administrador</tspan>
+    <tspan x="19" dy="22">y al editor con propuestas de contenido para esta pagina.</tspan>
+  </text>
+
+  <rect x="19" y="190" width="352" height="244" rx="16" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="226" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">Que te gustaria que se anadiera</text>
+  <rect x="39" y="246" width="312" height="38" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="55" y="270" fill="#8F8A80" font-family="Inter" font-size="10">Ejemplo: Personajes que faltan, curiosidades...</text>
+
+  <text x="39" y="320" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">Mensaje para administrador y editor</text>
+  <rect x="39" y="340" width="312" height="82" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="55" y="366" fill="#8F8A80" font-family="Inter" font-size="10">Explica aqui tu idea o solicitud para esta pagina.</text>
+
+  <rect x="39" y="454" width="116" height="34" rx="17" fill="url(#gold)"/>
+  <text x="61" y="476" fill="#101214" font-family="Inter" font-size="11" font-weight="800">Enviar solicitud</text>
+
+  <rect x="19" y="500" width="352" height="28" rx="10" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="37" y="519" fill="#D0C5B0" font-family="Inter" font-size="10">Aun no has enviado solicitudes en esta pagina</text>
+
+  <rect x="4" y="568" width="382" height="300" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="608" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="800">Como funciona</text>
+
+  <rect x="19" y="640" width="352" height="56" rx="14" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="666" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">Destino</text>
+  <text x="112" y="666" fill="#D0C5B0" font-family="Inter" font-size="11">Va al administrador y al usuario editor.</text>
+
+  <rect x="19" y="710" width="352" height="56" rx="14" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="736" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">Uso</text>
+  <text x="112" y="736" fill="#D0C5B0" font-family="Inter" font-size="11">Pedir personajes, curiosidades o correcciones.</text>
+
+  <rect x="19" y="780" width="352" height="56" rx="14" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="806" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">Estado</text>
+  <text x="112" y="806" fill="#D0C5B0" font-family="Inter" font-size="11">Veras si sigue pendiente o revisada.</text>
+
+  <rect x="4" y="894" width="382" height="260" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="934" fill="#E2AA2F" font-family="Inter" font-size="11" font-weight="800" letter-spacing="3">WIKI ABIERTA</text>
+  <text x="19" y="974" fill="#F4EFE4" font-family="Playfair Display" font-size="27" font-weight="800">Contenido de la comunidad</text>
+  <text x="19" y="1014" fill="#D0C5B0" font-family="Inter" font-size="13">
+    <tspan x="19" dy="0">Los aportes aprobados por editor o administrador aparecen aqui,</tspan>
+    <tspan x="19" dy="22">fuera del bloque de solicitudes.</tspan>
+  </text>
+
+  <rect x="19" y="1072" width="352" height="58" rx="14" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="1097" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">Aun no hay contenido extra en esta pagina</text>
+  <text x="39" y="1118" fill="#D0C5B0" font-family="Inter" font-size="10">Cuando el admin publique algo, aparecera en este bloque.</text>
+
+  <rect x="24" y="1190" width="90" height="36" rx="18" fill="#0C151F" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="41" y="1213" fill="#F4EFE4" font-family="Inter" font-size="13" font-weight="800">♟ Audio</text>
+  <circle cx="342" cy="1198" r="20" fill="url(#gold)"/>
+  <text x="335" y="1206" fill="#101214" font-family="Inter" font-size="18" font-weight="900">↑</text>
+</svg>

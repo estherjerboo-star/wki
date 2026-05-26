@@ -1,0 +1,91 @@
+<svg width="300" height="333" viewBox="0 0 300 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(164 61) rotate(90) scale(190 228)">
+      <stop stop-color="#172635"/>
+      <stop offset="0.55" stop-color="#0B141D"/>
+      <stop offset="1" stop-color="#05090E"/>
+    </radialGradient>
+    <linearGradient id="cover" x1="53" y1="90" x2="246" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A25"/>
+      <stop offset="0.5" stop-color="#243847"/>
+      <stop offset="1" stop-color="#101A25"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F1D991"/>
+      <stop offset="1" stop-color="#D6A84F"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="300" height="333" fill="#E6E6E6"/>
+  <text x="18" y="26" fill="#8D8D8D" font-family="Arial, sans-serif" font-size="12">1</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="19" y="34" width="262" height="264" fill="#03070B"/>
+    <rect x="19" y="34" width="262" height="264" fill="url(#bg)"/>
+
+    <rect x="19" y="34" width="262" height="23" fill="#050A10"/>
+    <circle cx="28.5" cy="42.5" r="5.5" fill="url(#gold)"/>
+    <circle cx="26.7" cy="40.9" r="1.4" fill="#0D1620"/>
+    <circle cx="30.2" cy="40.9" r="1.4" fill="#0D1620"/>
+    <path d="M25.9 44.2C27.6 46.1 29.5 46.1 31.1 44.2" stroke="#0D1620" stroke-width="1.1" stroke-linecap="round"/>
+    <text x="37" y="40.2" fill="#F4EFE4" font-family="Georgia, serif" font-size="4.7" font-weight="700">Los tres grandes</text>
+    <text x="37" y="46.5" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="3.8">Anime wiki fan</text>
+
+    <rect x="201" y="38" width="18" height="8" rx="4" fill="#D6A84F" fill-opacity="0.18" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="0.5"/>
+    <text x="205.2" y="43.5" fill="#F4EFE4" font-family="Arial, sans-serif" font-size="2.8" font-weight="700">Inicio</text>
+    <text x="224" y="43.5" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="3">Iniciar sesion</text>
+    <text x="253" y="43.5" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="3">Crear cuenta</text>
+
+    <rect x="47" y="59" width="205" height="114" rx="7" fill="#0C151F" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="55" y="68" fill="#D6A84F" font-family="Arial, sans-serif" font-size="3.8" font-weight="800" letter-spacing="0.7">PORTAL PRINCIPAL</text>
+    <text x="55" y="80" fill="#F4EFE4" font-family="Georgia, serif" font-size="12.8" font-weight="700">Los tres grandes</text>
+    <text x="55" y="93" fill="#F4EFE4" font-family="Georgia, serif" font-size="12.8" font-weight="700">del anime</text>
+
+    <rect x="55" y="90" width="188" height="51" rx="4.5" fill="url(#cover)"/>
+    <circle cx="145" cy="116" r="16" fill="#5E4B3C" stroke="#D6A84F" stroke-opacity="0.45" stroke-width="0.7"/>
+    <text x="132.5" y="135.2" fill="#D6A84F" font-family="Arial, sans-serif" font-size="2.9" font-weight="800" letter-spacing="0.5">ANIME WIKI FAN</text>
+
+    <text x="55" y="151" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="3.5">
+      <tspan x="55" dy="0">Entra a una portada inspirada en una enciclopedia visual de One Piece, Naruto y Bleach.</tspan>
+      <tspan x="55" dy="6">Descubre sus mundos, personajes y categorias principales desde una portada visual clara.</tspan>
+    </text>
+    <rect x="55" y="163" width="29" height="8.8" rx="4.4" fill="url(#gold)"/>
+    <text x="60" y="168.8" fill="#101214" font-family="Arial, sans-serif" font-size="3.2" font-weight="800">Iniciar sesion</text>
+    <rect x="89" y="163" width="31" height="8.8" rx="4.4" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="0.5"/>
+    <text x="94" y="168.8" fill="#F4EFE4" font-family="Arial, sans-serif" font-size="3.2" font-weight="800">Crear cuenta</text>
+
+    <rect x="47" y="182" width="205" height="96" rx="7" fill="#0C151F" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="55" y="194" fill="#D6A84F" font-family="Arial, sans-serif" font-size="3.8" font-weight="800" letter-spacing="1">SERIES DESTACADAS</text>
+    <text x="55" y="206" fill="#F4EFE4" font-family="Georgia, serif" font-size="10.2" font-weight="700">Explora el universo que</text>
+    <text x="55" y="217" fill="#F4EFE4" font-family="Georgia, serif" font-size="10.2" font-weight="700">prefieras</text>
+
+    <rect x="55" y="228" width="54" height="48" rx="4.5" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="0.6"/>
+    <rect x="63" y="237" width="24" height="22" rx="3" fill="#132333"/>
+    <circle cx="75" cy="248" r="9" fill="#44535C" stroke="#D6A84F" stroke-opacity="0.5" stroke-width="0.7"/>
+    <text x="58" y="267" fill="#F4EFE4" font-family="Georgia, serif" font-size="4.5" font-weight="700">One Piece</text>
+    <text x="58" y="272" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="2.7">Arcos, frutas del diablo, mares...</text>
+    <text x="58" y="276" fill="#D6A84F" font-family="Arial, sans-serif" font-size="2.8" font-weight="800">Abrir portada</text>
+
+    <rect x="123" y="228" width="54" height="48" rx="4.5" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="0.6"/>
+    <rect x="131" y="237" width="24" height="22" rx="3" fill="#3B2114"/>
+    <circle cx="143" cy="248" r="9" fill="#6E3715" stroke="#F18F3B" stroke-opacity="0.55" stroke-width="0.7"/>
+    <text x="126" y="267" fill="#F4EFE4" font-family="Georgia, serif" font-size="4.5" font-weight="700">Naruto</text>
+    <text x="126" y="272" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="2.7">Equipo 7, ojos, akatsuki y bijus...</text>
+    <text x="126" y="276" fill="#D6A84F" font-family="Arial, sans-serif" font-size="2.8" font-weight="800">Abrir portada</text>
+
+    <rect x="191" y="228" width="54" height="48" rx="4.5" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="0.6"/>
+    <rect x="199" y="237" width="24" height="22" rx="3" fill="#12303B"/>
+    <circle cx="211" cy="248" r="9" fill="#263F48" stroke="#7AC7DD" stroke-opacity="0.55" stroke-width="0.7"/>
+    <text x="194" y="267" fill="#F4EFE4" font-family="Georgia, serif" font-size="4.5" font-weight="700">Bleach</text>
+    <text x="194" y="272" fill="#D0C5B0" font-family="Arial, sans-serif" font-size="2.7">Shinigamis, hollows, bankais...</text>
+    <text x="194" y="276" fill="#D6A84F" font-family="Arial, sans-serif" font-size="2.8" font-weight="800">Abrir portada</text>
+
+    <circle cx="262" cy="289" r="7" fill="url(#gold)"/>
+    <text x="259.3" y="292.8" fill="#101214" font-family="Arial, sans-serif" font-size="8" font-weight="900">↑</text>
+  </g>
+
+  <text x="20" y="315" fill="#8D8D8D" font-family="Arial, sans-serif" font-size="12">5 Sin registro</text>
+</svg>

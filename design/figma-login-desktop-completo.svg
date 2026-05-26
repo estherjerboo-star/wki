@@ -1,0 +1,84 @@
+﻿<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 300) rotate(90) scale(760 1040)">
+      <stop stop-color="#1A2A3B"/>
+      <stop offset="0.55" stop-color="#07101A"/>
+      <stop offset="1" stop-color="#04070D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F2CF78"/>
+      <stop offset="1" stop-color="#D9B15F"/>
+    </linearGradient>
+    <linearGradient id="mangaLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#263A4B"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <linearGradient id="mangaCenter" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4A2412"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <linearGradient id="mangaRight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#143846"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="1024" fill="#04070D"/>
+  <rect x="0" y="0" width="480" height="1024" fill="url(#mangaLeft)" opacity="0.58"/>
+  <rect x="480" y="0" width="480" height="1024" fill="url(#mangaCenter)" opacity="0.46"/>
+  <rect x="960" y="0" width="480" height="1024" fill="url(#mangaRight)" opacity="0.52"/>
+  <rect width="1440" height="1024" fill="url(#bg)" opacity="0.9"/>
+  <rect width="1440" height="1024" fill="#050A11" opacity="0.68"/>
+
+  <g opacity="0.18">
+    <circle cx="214" cy="180" r="96" stroke="#F2CF78" stroke-width="2"/>
+    <circle cx="1148" cy="216" r="128" stroke="#7AC7DD" stroke-width="2"/>
+    <circle cx="746" cy="820" r="145" stroke="#F18F3B" stroke-width="2"/>
+    <path d="M90 774C250 684 372 705 524 604" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M934 152C1078 262 1208 310 1364 280" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="490" y="175" width="460" height="674" rx="24" fill="#09111B" fill-opacity="0.88" stroke="#C5A65C" stroke-opacity="0.32"/>
+
+    <text x="540" y="243" fill="#D9B15F" font-family="Inter" font-size="15" font-weight="800" letter-spacing="3">ENCICLOPEDIA ANIME</text>
+    <text x="540" y="306" fill="#F5EFE3" font-family="Playfair Display" font-size="46" font-weight="700">
+      <tspan x="540" dy="0">Los tres grandes</tspan>
+      <tspan x="540" dy="50">del anime</tspan>
+    </text>
+
+    <text x="540" y="391" fill="#D9CFBA" font-family="Inter" font-size="18">
+      <tspan x="540" dy="0">Inicia sesion para entrar a la portada de</tspan>
+      <tspan x="540" dy="30">One Piece, Naruto y Bleach.</tspan>
+    </text>
+
+    <text x="540" y="470" fill="#D9CFBA" font-family="Inter" font-size="15" font-weight="700">Correo o usuario</text>
+    <rect x="540" y="488" width="360" height="58" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <text x="562" y="524" fill="#8F8A80" font-family="Inter" font-size="16">Correo o nombre de usuario</text>
+
+    <text x="540" y="594" fill="#D9CFBA" font-family="Inter" font-size="15" font-weight="700">Contrasena</text>
+    <rect x="540" y="612" width="360" height="58" rx="14" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.09"/>
+    <text x="562" y="648" fill="#8F8A80" font-family="Inter" font-size="16">********</text>
+
+    <rect x="540" y="704" width="360" height="58" rx="14" fill="url(#gold)"/>
+    <text x="666" y="740" fill="#1B1610" font-family="Inter" font-size="16" font-weight="800">Iniciar sesion</text>
+
+    <text x="540" y="797" fill="#F2CF78" font-family="Inter" font-size="15">Olvidaste tu contrasena?</text>
+    <text x="805" y="797" fill="#F2CF78" font-family="Inter" font-size="15">Crear cuenta</text>
+  </g>
+
+  <g opacity="0.72">
+    <circle cx="720" cy="108" r="28" fill="#09111B" stroke="#C5A65C" stroke-opacity="0.32"/>
+    <circle cx="720" cy="108" r="20" fill="url(#gold)"/>
+    <circle cx="713" cy="102" r="5" fill="#132130"/>
+    <circle cx="727" cy="102" r="5" fill="#132130"/>
+    <path d="M711 114C716 121 724 121 730 114" stroke="#132130" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <text x="720" y="910" fill="#D9CFBA" font-family="Inter" font-size="14" text-anchor="middle" opacity="0.75">Pantalla de acceso para usuarios de la wiki</text>
+</svg>
+
+

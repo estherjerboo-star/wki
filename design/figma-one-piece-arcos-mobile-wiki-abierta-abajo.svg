@@ -1,0 +1,45 @@
+<svg width="390" height="720" viewBox="0 0 390 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(195 0) rotate(90) scale(520 430)">
+      <stop stop-color="#203044"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#E2AA2F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="720" fill="#E6E6E6"/>
+  <rect width="390" height="720" fill="url(#bg)"/>
+  <rect width="390" height="720" fill="#03070B" opacity="0.25"/>
+
+  <rect x="4" y="24" width="382" height="426" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="64" fill="#E2AA2F" font-family="Inter" font-size="11" font-weight="800" letter-spacing="3">WIKI ABIERTA</text>
+  <text x="19" y="104" fill="#F4EFE4" font-family="Playfair Display" font-size="27" font-weight="800">Contenido de la comunidad</text>
+  <text x="19" y="144" fill="#D0C5B0" font-family="Inter" font-size="13">
+    <tspan x="19" dy="0">Esta zona muestra contenido aprobado por el editor o administrador.</tspan>
+    <tspan x="19" dy="22">Aparece separado de las solicitudes para que el usuario lea solo</tspan>
+    <tspan x="19" dy="22">la informacion ya publicada.</tspan>
+  </text>
+
+  <rect x="19" y="222" width="352" height="74" rx="14" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="250" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="800">Entrada publicada</text>
+  <text x="39" y="276" fill="#D0C5B0" font-family="Inter" font-size="11">Placeholder para contenido aprobado de esta pagina.</text>
+
+  <rect x="19" y="316" width="352" height="74" rx="14" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="39" y="344" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="800">Otra entrada de comunidad</text>
+  <text x="39" y="370" fill="#D0C5B0" font-family="Inter" font-size="11">El texto que agregue el admin aparece aqui debajo.</text>
+
+  <rect x="4" y="474" width="382" height="154" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="514" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="800">Permisos de publicacion</text>
+  <text x="19" y="558" fill="#D0C5B0" font-family="Inter" font-size="13">• El usuario normal solo envia solicitudes.</text>
+  <text x="19" y="588" fill="#D0C5B0" font-family="Inter" font-size="13">• Editor y administrador publican contenido visible.</text>
+  <text x="19" y="618" fill="#D0C5B0" font-family="Inter" font-size="13">• Este bloque no mezcla mensajes pendientes.</text>
+
+  <rect x="24" y="660" width="90" height="36" rx="18" fill="#0C151F" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="41" y="683" fill="#F4EFE4" font-family="Inter" font-size="13" font-weight="800">♟ Audio</text>
+  <circle cx="342" cy="668" r="20" fill="url(#gold)"/>
+  <text x="335" y="676" fill="#101214" font-family="Inter" font-size="18" font-weight="900">↑</text>
+</svg>

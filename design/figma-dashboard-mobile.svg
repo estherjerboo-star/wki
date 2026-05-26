@@ -1,0 +1,95 @@
+<svg width="390" height="1400" viewBox="0 0 390 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(195 0) rotate(90) scale(820 430)">
+      <stop stop-color="#172536"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#D6A84F"/>
+    </linearGradient>
+    <linearGradient id="heroImage" x1="15" y1="290" x2="375" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C8D4D4"/>
+      <stop offset="0.35" stop-color="#D8C85A"/>
+      <stop offset="0.6" stop-color="#8E9DA3"/>
+      <stop offset="0.82" stop-color="#E88F2D"/>
+      <stop offset="1" stop-color="#87939B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="390" height="1400" fill="#E6E6E6"/>
+  <rect width="390" height="1400" fill="url(#bg)"/>
+  <rect width="390" height="1400" fill="#03070B" opacity="0.25"/>
+
+  <rect width="390" height="177" fill="#050A10" fill-opacity="0.95"/>
+  <line x1="0" y1="176.5" x2="390" y2="176.5" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+  <circle cx="31" cy="28" r="18" fill="#0D1722" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="31" cy="28" r="13" fill="url(#gold)"/>
+  <text x="25" y="34" fill="#101214" font-family="Inter" font-size="14" font-weight="900">3</text>
+  <text x="57" y="24" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="800">Los tres grandes</text>
+  <text x="57" y="43" fill="#D0C5B0" font-family="Inter" font-size="11">Anime wiki fan</text>
+
+  <g font-family="Inter" font-size="13" font-weight="600">
+    <rect x="15" y="68" width="72" height="34" rx="17" fill="#D6A84F" fill-opacity="0.18" stroke="#C5A65C" stroke-opacity="0.35"/>
+    <text x="29" y="90" fill="#F4EFE4">Portada</text>
+    <text x="105" y="90" fill="#D0C5B0">One Piece</text>
+    <text x="189" y="90" fill="#D0C5B0">Naruto</text>
+    <text x="253" y="90" fill="#D0C5B0">Bleach</text>
+  </g>
+
+  <rect x="15" y="116" width="360" height="46" rx="23" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <circle cx="39" cy="139" r="17" fill="url(#gold)"/>
+  <text x="33" y="145" fill="#101214" font-family="Inter" font-size="16" font-weight="900">K</text>
+  <text x="69" y="133" fill="#D0C5B0" font-family="Inter" font-size="10">Bienvenido</text>
+  <text x="69" y="150" fill="#F4EFE4" font-family="Inter" font-size="15" font-weight="800">kurosaki</text>
+  <text x="352" y="146" fill="#D0C5B0" font-family="Inter" font-size="20" font-weight="900">+</text>
+
+  <rect x="4" y="188" width="382" height="910" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="229" fill="#D6A84F" font-family="Inter" font-size="11" font-weight="800" letter-spacing="3">PORTADA PRINCIPAL</text>
+  <text x="19" y="273" fill="#F4EFE4" font-family="Playfair Display" font-size="33" font-weight="800">Los tres grandes del anime</text>
+
+  <rect x="15" y="304" width="360" height="230" rx="16" fill="url(#heroImage)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <g opacity="0.72">
+    <path d="M20 380H105L125 340H35L20 380Z" fill="#D6D083"/>
+    <path d="M130 380H250L270 340H145L130 380Z" fill="#A7B1B5"/>
+    <path d="M255 380H370L382 340H270L255 380Z" fill="#D8DBD4"/>
+    <circle cx="115" cy="440" r="31" fill="#A1271F"/>
+    <circle cx="195" cy="420" r="29" fill="#F19B2E"/>
+    <circle cx="284" cy="397" r="42" fill="#62A884"/>
+  </g>
+
+  <text x="19" y="579" fill="#D0C5B0" font-family="Inter" font-size="15">
+    <tspan x="19" dy="0">Explora una portada estilo enciclopedia con acceso rapido a los mundos de</tspan>
+    <tspan x="19" dy="24">One Piece, Naruto y Bleach. Cada portada te lleva a sus apartados y cada</tspan>
+    <tspan x="19" dy="24">imagen abre una ficha lista para que agregues tu propia informacion.</tspan>
+  </text>
+
+  <rect x="19" y="675" width="352" height="78" rx="16" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="35" y="707" fill="#D6A84F" font-family="Inter" font-size="15" font-weight="900">3 universos</text>
+  <text x="35" y="735" fill="#D0C5B0" font-family="Inter" font-size="13">One Piece, Naruto y Bleach reunidos en una sola wiki.</text>
+
+  <rect x="19" y="769" width="352" height="78" rx="16" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="35" y="801" fill="#D6A84F" font-family="Inter" font-size="15" font-weight="900">18 apartados</text>
+  <text x="35" y="829" fill="#D0C5B0" font-family="Inter" font-size="13">Arcos, clanes, quincys, yonkos y mucho mas.</text>
+
+  <rect x="19" y="863" width="352" height="78" rx="16" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="35" y="895" fill="#D6A84F" font-family="Inter" font-size="15" font-weight="900">Comunidad</text>
+  <text x="35" y="923" fill="#D0C5B0" font-family="Inter" font-size="13">Contenido editable y sugerencias para ampliar cada pagina.</text>
+
+  <rect x="4" y="1120" width="382" height="250" rx="20" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="19" y="1160" fill="#D6A84F" font-family="Inter" font-size="11" font-weight="800" letter-spacing="3">SERIES DESTACADAS</text>
+  <text x="19" y="1198" fill="#F4EFE4" font-family="Playfair Display" font-size="28" font-weight="800">Selecciona tu universo favorito</text>
+
+  <rect x="19" y="1230" width="352" height="44" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="41" y="1258" fill="#F4EFE4" font-family="Playfair Display" font-size="17" font-weight="800">One Piece</text>
+  <text x="288" y="1258" fill="#D6A84F" font-family="Inter" font-size="12" font-weight="800">Abrir</text>
+
+  <rect x="19" y="1286" width="352" height="44" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="41" y="1314" fill="#F4EFE4" font-family="Playfair Display" font-size="17" font-weight="800">Naruto</text>
+  <text x="288" y="1314" fill="#D6A84F" font-family="Inter" font-size="12" font-weight="800">Abrir</text>
+
+  <circle cx="342" cy="1348" r="20" fill="url(#gold)"/>
+  <text x="335" y="1356" fill="#101214" font-family="Inter" font-size="18" font-weight="900">↑</text>
+</svg>

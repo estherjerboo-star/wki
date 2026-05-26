@@ -1,0 +1,120 @@
+<svg width="1440" height="1200" viewBox="0 0 1440 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 0) rotate(90) scale(950 1240)">
+      <stop stop-color="#203044"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#E2AA2F"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="120" y1="140" x2="1320" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#153148"/>
+      <stop offset="0.48" stop-color="#2B4355"/>
+      <stop offset="1" stop-color="#111A24"/>
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#163146"/>
+      <stop offset="1" stop-color="#101B27"/>
+    </linearGradient>
+    <linearGradient id="cardOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4A2712"/>
+      <stop offset="1" stop-color="#101B27"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="26" stdDeviation="36" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="1200" fill="url(#bg)"/>
+  <rect width="1440" height="1200" fill="#03070B" opacity="0.28"/>
+
+  <rect width="1440" height="96" fill="#050A10" fill-opacity="0.92"/>
+  <line x1="0" y1="95.5" x2="1440" y2="95.5" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+  <circle cx="76" cy="48" r="28" fill="#0D1722" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="76" cy="48" r="21" fill="url(#gold)"/>
+  <circle cx="69" cy="42" r="5" fill="#132130"/>
+  <circle cx="83" cy="42" r="5" fill="#132130"/>
+  <path d="M67 54C72 62 80 62 86 54" stroke="#132130" stroke-width="4" stroke-linecap="round"/>
+  <text x="120" y="39" fill="#F4EFE4" font-family="Playfair Display" font-size="26" font-weight="700">Los tres grandes</text>
+  <text x="120" y="66" fill="#D0C5B0" font-family="Inter" font-size="15">Anime wiki fan</text>
+
+  <g font-family="Inter" font-size="16" font-weight="600">
+    <text x="610" y="54" fill="#D0C5B0">Portada</text>
+    <rect x="708" y="28" width="116" height="40" rx="20" fill="#E2AA2F" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="730" y="54" fill="#F4EFE4">One Piece</text>
+    <text x="858" y="54" fill="#D0C5B0">Naruto</text>
+    <text x="960" y="54" fill="#D0C5B0">Bleach</text>
+  </g>
+
+  <rect x="1190" y="19" width="198" height="58" rx="29" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <circle cx="1220" cy="48" r="20" fill="url(#gold)"/>
+  <text x="1214" y="55" fill="#101214" font-family="Inter" font-size="18" font-weight="800">A</text>
+  <text x="1256" y="39" fill="#D0C5B0" font-family="Inter" font-size="12">Bienvenido</text>
+  <text x="1256" y="60" fill="#F4EFE4" font-family="Inter" font-size="16" font-weight="800">Usuario</text>
+  <text x="1360" y="55" fill="#D0C5B0" font-family="Inter" font-size="22" font-weight="800">+</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="136" width="1200" height="500" rx="30" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="160" y="176" width="1120" height="268" rx="24" fill="url(#cover)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="198" y="224" fill="#D0C5B0" font-family="Inter" font-size="16" font-weight="700">Portada de One Piece</text>
+    <text x="198" y="266" fill="#F4EFE4" font-family="Playfair Display" font-size="44" font-weight="700">El gran viaje pirata</text>
+    <text x="198" y="306" fill="#D0C5B0" font-family="Inter" font-size="16">Mar, aventuras, tripulaciones, frutas del diablo y grandes enemigos.</text>
+    <circle cx="882" cy="310" r="82" fill="#E2AA2F" fill-opacity="0.14" stroke="#E2AA2F" stroke-opacity="0.4" stroke-width="2"/>
+    <circle cx="1016" cy="310" r="64" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="842" y="318" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">One Piece</text>
+
+    <text x="160" y="506" fill="#E2AA2F" font-family="Inter" font-size="15" font-weight="800" letter-spacing="3">ONE PIECE</text>
+    <text x="160" y="556" fill="#F4EFE4" font-family="Playfair Display" font-size="54" font-weight="700">Enciclopedia del gran viaje pirata</text>
+    <text x="160" y="604" fill="#D0C5B0" font-family="Inter" font-size="18">
+      <tspan x="160" dy="0">Esta portada concentra algunos de los temas mas importantes de One Piece en un formato visual tipo wikipedia.</tspan>
+      <tspan x="160" dy="30">Aqui puedes entrar a cada apartado para conocer su funcion dentro del mundo pirata y sus ideas clave.</tspan>
+    </text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="684" width="1200" height="402" rx="30" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="160" y="736" fill="#E2AA2F" font-family="Inter" font-size="15" font-weight="800" letter-spacing="3">APARTADOS</text>
+    <text x="160" y="784" fill="#F4EFE4" font-family="Playfair Display" font-size="40" font-weight="700">Explora el contenido de One Piece</text>
+
+    <g font-family="Inter">
+      <rect x="160" y="828" width="350" height="96" rx="22" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="184" y="850" width="62" height="52" rx="14" fill="url(#cardBlue)"/>
+      <circle cx="215" cy="876" r="18" fill="#44535C" stroke="#E2AA2F" stroke-opacity="0.5"/>
+      <text x="270" y="865" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">Arcos</text>
+      <text x="270" y="902" fill="#E2AA2F" font-size="14" font-weight="800">Abrir ficha</text>
+
+      <rect x="545" y="828" width="350" height="96" rx="22" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="569" y="850" width="62" height="52" rx="14" fill="url(#cardOrange)"/>
+      <circle cx="600" cy="876" r="18" fill="#6E3715" stroke="#E2AA2F" stroke-opacity="0.5"/>
+      <text x="655" y="865" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">Frutas del diablo</text>
+      <text x="655" y="902" fill="#E2AA2F" font-size="14" font-weight="800">Abrir ficha</text>
+
+      <rect x="930" y="828" width="350" height="96" rx="22" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="954" y="850" width="62" height="52" rx="14" fill="url(#cardBlue)"/>
+      <circle cx="985" cy="876" r="18" fill="#44535C" stroke="#E2AA2F" stroke-opacity="0.5"/>
+      <text x="1040" y="865" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">Mares</text>
+      <text x="1040" y="902" fill="#E2AA2F" font-size="14" font-weight="800">Abrir ficha</text>
+
+      <rect x="160" y="958" width="350" height="96" rx="22" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="184" y="980" width="62" height="52" rx="14" fill="url(#cardOrange)"/>
+      <circle cx="215" cy="1006" r="18" fill="#6E3715" stroke="#E2AA2F" stroke-opacity="0.5"/>
+      <text x="270" y="995" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">Sichibukais</text>
+      <text x="270" y="1032" fill="#E2AA2F" font-size="14" font-weight="800">Abrir ficha</text>
+
+      <rect x="545" y="958" width="350" height="96" rx="22" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="569" y="980" width="62" height="52" rx="14" fill="url(#cardBlue)"/>
+      <circle cx="600" cy="1006" r="18" fill="#44535C" stroke="#E2AA2F" stroke-opacity="0.5"/>
+      <text x="655" y="995" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">Tripulacion</text>
+      <text x="655" y="1032" fill="#E2AA2F" font-size="14" font-weight="800">Abrir ficha</text>
+
+      <rect x="930" y="958" width="350" height="96" rx="22" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="954" y="980" width="62" height="52" rx="14" fill="url(#cardOrange)"/>
+      <circle cx="985" cy="1006" r="18" fill="#6E3715" stroke="#E2AA2F" stroke-opacity="0.5"/>
+      <text x="1040" y="995" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="700">Yonkos</text>
+      <text x="1040" y="1032" fill="#E2AA2F" font-size="14" font-weight="800">Abrir ficha</text>
+    </g>
+  </g>
+</svg>

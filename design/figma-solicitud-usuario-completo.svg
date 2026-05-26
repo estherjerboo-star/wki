@@ -1,0 +1,98 @@
+<svg width="1040" height="1400" viewBox="0 0 1040 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 60) rotate(90) scale(880 980)">
+      <stop stop-color="#172536"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#D6A84F"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1040" height="1400" fill="#E6E6E6"/>
+  <text x="18" y="13" fill="#9A9A9A" font-family="Inter" font-size="16">7 Usuario Abajo</text>
+
+  <rect x="26" y="28" width="988" height="1345" fill="url(#bg)"/>
+  <rect x="26" y="28" width="988" height="1345" fill="#03070B" opacity="0.25"/>
+
+  <rect x="40" y="45" width="960" height="58" rx="14" fill="#050A10" fill-opacity="0.94" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <circle cx="82" cy="74" r="18" fill="#0D1722" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="77" y="80" fill="#D6A84F" font-family="Inter" font-size="15" font-weight="800">3</text>
+  <text x="116" y="66" fill="#F4EFE4" font-family="Playfair Display" font-size="16" font-weight="700">Los tres grandes</text>
+  <text x="116" y="84" fill="#D0C5B0" font-family="Inter" font-size="10">Anime wiki fan</text>
+
+  <g font-family="Inter" font-size="11" font-weight="600">
+    <text x="360" y="77" fill="#D0C5B0">Portada</text>
+    <rect x="415" y="55" width="78" height="35" rx="17.5" fill="#D6A84F" fill-opacity="0.16" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="433" y="77" fill="#F4EFE4">One Piece</text>
+    <text x="514" y="77" fill="#D0C5B0">Naruto</text>
+    <text x="575" y="77" fill="#D0C5B0">Bleach</text>
+  </g>
+
+  <rect x="798" y="54" width="166" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <circle cx="819" cy="73" r="14" fill="url(#gold)"/>
+  <text x="814" y="78" fill="#101214" font-family="Inter" font-size="13" font-weight="800">A</text>
+  <text x="847" y="68" fill="#D0C5B0" font-family="Inter" font-size="9">Bienvenido</text>
+  <text x="847" y="82" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Usuario</text>
+  <text x="940" y="79" fill="#D0C5B0" font-family="Inter" font-size="15" font-weight="800">+</text>
+
+  <g filter="url(#shadow)">
+    <rect x="104" y="406" width="506" height="644" rx="18" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="126" y="448" fill="#D6A84F" font-family="Inter" font-size="10" font-weight="800" letter-spacing="1.8">SOLICITUDES</text>
+    <text x="126" y="486" fill="#F4EFE4" font-family="Playfair Display" font-size="31" font-weight="700">Enviar una idea para esta pagina</text>
+    <text x="126" y="524" fill="#D0C5B0" font-family="Inter" font-size="13">
+      <tspan x="126" dy="0">Como usuario registrado puedes mandar un mensaje al administrador y al</tspan>
+      <tspan x="126" dy="20">editor con propuestas de contenido para esta pagina.</tspan>
+    </text>
+
+    <rect x="126" y="556" width="462" height="306" rx="16" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="148" y="594" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Que te gustaria que se anadiera</text>
+    <rect x="148" y="612" width="398" height="39" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="168" y="637" fill="#8F8A80" font-family="Inter" font-size="11">Ejemplo: Personajes que faltan, curiosidades, tecnicas...</text>
+
+    <text x="148" y="688" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Mensaje para administrador y editor</text>
+    <rect x="148" y="706" width="398" height="108" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="168" y="732" fill="#8F8A80" font-family="Inter" font-size="11">Explica aqui tu idea o solicitud para esta pagina.</text>
+
+    <rect x="148" y="831" width="110" height="32" rx="16" fill="url(#gold)"/>
+    <text x="169" y="852" fill="#101214" font-family="Inter" font-size="11" font-weight="800">Enviar solicitud</text>
+
+    <rect x="126" y="891" width="462" height="68" rx="12" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="148" y="918" fill="#F4EFE4" font-family="Inter" font-size="11" font-weight="800">Aun no has enviado solicitudes en esta pagina</text>
+    <text x="148" y="943" fill="#D0C5B0" font-family="Inter" font-size="11">Usa el formulario superior para mandar una idea o una correccion al equipo editor.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="645" y="422" width="307" height="219" rx="16" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="671" y="461" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="700">Como funciona</text>
+    <text x="671" y="508" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">• Destino:</text>
+    <text x="694" y="532" fill="#D0C5B0" font-family="Inter" font-size="11">tus mensajes van dirigidos al administrador y al</text>
+    <text x="694" y="550" fill="#D0C5B0" font-family="Inter" font-size="11">usuario editor.</text>
+    <text x="671" y="591" fill="#F4EFE4" font-family="Inter" font-size="12" font-weight="800">• Uso:</text>
+    <text x="694" y="615" fill="#D0C5B0" font-family="Inter" font-size="11">sirve para pedir personajes, curiosidades, secciones</text>
+    <text x="694" y="633" fill="#D0C5B0" font-family="Inter" font-size="11">o correcciones.</text>
+
+    <rect x="645" y="664" width="307" height="90" rx="16" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="671" y="703" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="700">Pagina</text>
+    <text x="671" y="733" fill="#D0C5B0" font-family="Inter" font-size="11">La solicitud queda vinculada a esta seccion concreta.</text>
+
+    <rect x="645" y="780" width="307" height="90" rx="16" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="671" y="819" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="700">Estado</text>
+    <text x="671" y="849" fill="#D0C5B0" font-family="Inter" font-size="11">Veras si sigue pendiente o si ya fue revisada.</text>
+
+    <rect x="645" y="896" width="307" height="90" rx="16" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="671" y="935" fill="#F4EFE4" font-family="Playfair Display" font-size="18" font-weight="700">Cuenta</text>
+    <text x="671" y="965" fill="#D0C5B0" font-family="Inter" font-size="11">Se envia con tu nombre de usuario y tu correo actual.</text>
+  </g>
+
+  <rect x="48" y="1320" width="106" height="38" rx="19" fill="#0C151F" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="66" y="1344" fill="#F4EFE4" font-family="Inter" font-size="14" font-weight="800">♟ Audio</text>
+
+  <circle cx="972" cy="1328" r="19" fill="url(#gold)"/>
+  <text x="965" y="1335" fill="#101214" font-family="Inter" font-size="18" font-weight="900">↑</text>
+</svg>

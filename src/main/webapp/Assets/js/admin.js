@@ -77,7 +77,6 @@ async function syncAdminStateFromServer() {
       }
     }
   } catch (error) {
-    // Si se abre sin servidor, el panel sigue usando el respaldo local.
   }
 }
 
@@ -93,7 +92,6 @@ async function persistEntry(entry) {
       return saved;
     }
   } catch (error) {
-    // Respaldo local si falla el servidor.
   }
   return entry;
 }
@@ -104,7 +102,6 @@ async function removeEntryRemote(entryId) {
       method: "DELETE"
     });
   } catch (error) {
-    // Respaldo local si falla el servidor.
   }
 }
 
@@ -116,7 +113,6 @@ async function persistRequestStatus(requestId, status) {
       body: JSON.stringify({ action: "status", id: requestId, status })
     });
   } catch (error) {
-    // Respaldo local si falla el servidor.
   }
 }
 
@@ -126,7 +122,6 @@ async function removeRequestRemote(requestId) {
       method: "DELETE"
     });
   } catch (error) {
-    // Respaldo local si falla el servidor.
   }
 }
 

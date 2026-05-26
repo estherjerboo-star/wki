@@ -146,7 +146,6 @@ async function syncCommunityStateFromServer() {
       }
     }
   } catch (error) {
-    // Si se abre sin servidor, se mantiene el respaldo local.
   }
 }
 
@@ -162,7 +161,6 @@ async function persistContentEntry(entry) {
       return saved;
     }
   } catch (error) {
-    // El localStorage queda como respaldo si el servidor no responde.
   }
   return entry;
 }
@@ -173,7 +171,6 @@ async function removeContentEntryRemote(entryId) {
       method: "DELETE"
     });
   } catch (error) {
-    // Borrado local como respaldo.
   }
 }
 
@@ -189,7 +186,6 @@ async function persistContentRequest(request) {
       return saved;
     }
   } catch (error) {
-    // El localStorage queda como respaldo si el servidor no responde.
   }
   return request;
 }

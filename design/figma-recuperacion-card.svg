@@ -1,0 +1,49 @@
+<svg width="478" height="516" viewBox="0 0 478 516" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240 36) rotate(90) scale(420 520)">
+      <stop stop-color="#24313B"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="68" y1="353" x2="434" y2="399" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4D678"/>
+      <stop offset="1" stop-color="#E4B94F"/>
+    </linearGradient>
+    <filter id="blurBg" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect width="478" height="516" fill="#151A1F"/>
+  <g opacity="0.55" filter="url(#blurBg)">
+    <rect x="-40" y="-20" width="560" height="560" fill="url(#bg)"/>
+    <circle cx="70" cy="120" r="120" fill="#FFFFFF" opacity="0.04"/>
+    <circle cx="420" cy="70" r="140" fill="#FFFFFF" opacity="0.03"/>
+    <path d="M-20 394C106 350 222 414 502 352" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="6"/>
+  </g>
+  <rect width="478" height="516" fill="#050A11" opacity="0.62"/>
+
+  <rect x="35" y="19" width="431" height="488" rx="23" fill="#09111B" fill-opacity="0.92" stroke="#C5A65C" stroke-opacity="0.42"/>
+
+  <text x="68" y="64" fill="#F2CF78" font-family="Inter" font-size="13" font-weight="800" letter-spacing="4">RECUPERACION</text>
+
+  <text x="68" y="130" fill="#F5EFE3" font-family="Playfair Display" font-size="40" font-weight="800">
+    <tspan x="68" dy="0">Recupera tu</tspan>
+    <tspan x="68" dy="40">cuenta</tspan>
+  </text>
+
+  <text x="68" y="207" fill="#D9CFBA" font-family="Inter" font-size="16">
+    <tspan x="68" dy="0">Busca tu correo y cambia la contrasena con el mismo</tspan>
+    <tspan x="68" dy="24">estilo de la portada principal.</tspan>
+  </text>
+
+  <text x="68" y="277" fill="#D9CFBA" font-family="Inter" font-size="14" font-weight="800">Correo electronico</text>
+  <rect x="68" y="289" width="365" height="47" rx="13" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.13"/>
+  <text x="84" y="318" fill="#8F8A80" font-family="Inter" font-size="16">tu@correo.com</text>
+
+  <rect x="68" y="353" width="365" height="46" rx="13" fill="url(#gold)"/>
+  <text x="200" y="381" fill="#1B1610" font-family="Inter" font-size="15" font-weight="800">Buscar cuenta</text>
+
+  <text x="68" y="472" fill="#F2CF78" font-family="Inter" font-size="14" font-weight="700">Volver al login</text>
+  <text x="356" y="472" fill="#F2CF78" font-family="Inter" font-size="14" font-weight="700">Crear cuenta</text>
+</svg>

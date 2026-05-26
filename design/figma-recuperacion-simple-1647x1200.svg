@@ -1,0 +1,69 @@
+<svg width="1647" height="1200" viewBox="0 0 1647 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(824 300) rotate(90) scale(840 1200)">
+      <stop stop-color="#1A2A3B"/>
+      <stop offset="0.55" stop-color="#07101A"/>
+      <stop offset="1" stop-color="#04070D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F2CF78"/>
+      <stop offset="1" stop-color="#D9B15F"/>
+    </linearGradient>
+    <linearGradient id="mangaLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#263A4B"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <linearGradient id="mangaCenter" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4A2412"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <linearGradient id="mangaRight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#143846"/>
+      <stop offset="1" stop-color="#0B121B"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1647" height="1200" fill="#04070D"/>
+  <rect x="0" y="0" width="549" height="1200" fill="url(#mangaLeft)" opacity="0.48"/>
+  <rect x="549" y="0" width="549" height="1200" fill="url(#mangaCenter)" opacity="0.36"/>
+  <rect x="1098" y="0" width="549" height="1200" fill="url(#mangaRight)" opacity="0.42"/>
+  <rect width="1647" height="1200" fill="url(#bg)" opacity="0.88"/>
+  <rect width="1647" height="1200" fill="#050A11" opacity="0.58"/>
+
+  <g opacity="0.2">
+    <rect x="0" y="0" width="1647" height="1200" fill="#FFFFFF" opacity="0.02"/>
+    <circle cx="230" cy="250" r="160" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3"/>
+    <circle cx="1340" cy="250" r="190" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3"/>
+    <path d="M-80 930C210 780 410 910 650 760" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4"/>
+    <path d="M990 170C1190 340 1410 360 1720 280" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="470" y="120" width="706" height="850" rx="40" fill="#09111B" fill-opacity="0.92" stroke="#C5A65C" stroke-opacity="0.34"/>
+
+    <text x="560" y="215" fill="#F2CF78" font-family="Inter" font-size="20" font-weight="800" letter-spacing="6">RECUPERACION</text>
+
+    <text x="560" y="336" fill="#F5EFE3" font-family="Playfair Display" font-size="74" font-weight="800">
+      <tspan x="560" dy="0">Recupera tu</tspan>
+      <tspan x="560" dy="74">cuenta</tspan>
+    </text>
+
+    <text x="560" y="490" fill="#D9CFBA" font-family="Inter" font-size="25">
+      <tspan x="560" dy="0">Busca tu correo y cambia la contrasena con el mismo</tspan>
+      <tspan x="560" dy="38">estilo de la portada principal.</tspan>
+    </text>
+
+    <text x="560" y="640" fill="#D9CFBA" font-family="Inter" font-size="22" font-weight="800">Correo electronico</text>
+    <rect x="560" y="665" width="526" height="74" rx="22" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <text x="588" y="711" fill="#8F8A80" font-family="Inter" font-size="24">tu@correo.com</text>
+
+    <rect x="560" y="785" width="526" height="74" rx="22" fill="url(#gold)"/>
+    <text x="742" y="831" fill="#1B1610" font-family="Inter" font-size="24" font-weight="800">Buscar cuenta</text>
+
+    <text x="560" y="930" fill="#F2CF78" font-family="Inter" font-size="22" font-weight="700">Volver al login</text>
+    <text x="972" y="930" fill="#F2CF78" font-family="Inter" font-size="22" font-weight="700">Crear cuenta</text>
+  </g>
+</svg>

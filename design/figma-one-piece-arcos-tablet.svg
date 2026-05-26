@@ -1,0 +1,146 @@
+<svg width="935" height="1900" viewBox="0 0 935 1900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(468 80) rotate(90) scale(1180 980)">
+      <stop stop-color="#203044"/>
+      <stop offset="0.55" stop-color="#0B121A"/>
+      <stop offset="1" stop-color="#05090D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0D38E"/>
+      <stop offset="1" stop-color="#E2AA2F"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="48" y1="132" x2="895" y2="356" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173146"/>
+      <stop offset="0.48" stop-color="#2D4658"/>
+      <stop offset="1" stop-color="#111A24"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="935" height="1900" fill="#E6E6E6"/>
+  <rect width="935" height="1900" fill="url(#bg)"/>
+  <rect width="935" height="1900" fill="#03070B" opacity="0.25"/>
+
+  <rect width="935" height="80" fill="#050A10" fill-opacity="0.95"/>
+  <line x1="0" y1="79.5" x2="935" y2="79.5" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+  <circle cx="48" cy="40" r="24" fill="#0D1722" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <circle cx="48" cy="40" r="18" fill="url(#gold)"/>
+  <circle cx="42" cy="35" r="4" fill="#132130"/>
+  <circle cx="54" cy="35" r="4" fill="#132130"/>
+  <path d="M40 46C44 52 51 52 56 46" stroke="#132130" stroke-width="3" stroke-linecap="round"/>
+  <text x="84" y="37" fill="#F4EFE4" font-family="Playfair Display" font-size="22" font-weight="800">Los tres grandes</text>
+  <text x="84" y="58" fill="#D0C5B0" font-family="Inter" font-size="12">Anime wiki fan</text>
+
+  <g font-family="Inter" font-size="15" font-weight="600">
+    <text x="330" y="45" fill="#D0C5B0">Portada</text>
+    <rect x="405" y="18" width="104" height="43" rx="21.5" fill="#E2AA2F" fill-opacity="0.18" stroke="#C5A65C" stroke-opacity="0.35"/>
+    <text x="424" y="45" fill="#F4EFE4">One Piece</text>
+    <text x="536" y="45" fill="#D0C5B0">Naruto</text>
+    <text x="623" y="45" fill="#D0C5B0">Bleach</text>
+  </g>
+
+  <rect x="764" y="15" width="154" height="50" rx="25" fill="#FFFFFF" fill-opacity="0.03" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <circle cx="792" cy="40" r="18" fill="url(#gold)"/>
+  <text x="786" y="47" fill="#101214" font-family="Inter" font-size="17" font-weight="900">K</text>
+  <text x="824" y="34" fill="#D0C5B0" font-family="Inter" font-size="10">Bienvenido</text>
+  <text x="824" y="52" fill="#F4EFE4" font-family="Inter" font-size="15" font-weight="800">kurosaki</text>
+  <text x="894" y="47" fill="#D0C5B0" font-family="Inter" font-size="20" font-weight="900">+</text>
+
+  <g filter="url(#shadow)">
+    <rect x="18" y="112" width="908" height="452" rx="28" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="48" y="142" width="847" height="210" rx="18" fill="url(#cover)" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="78" y="190" fill="#D0C5B0" font-family="Inter" font-size="15" font-weight="700">Imagen: Arcos de One Piece</text>
+    <text x="78" y="232" fill="#F4EFE4" font-family="Playfair Display" font-size="40" font-weight="800">Sagas y arcos del viaje</text>
+    <text x="78" y="270" fill="#D0C5B0" font-family="Inter" font-size="16">East Blue, Grand Line, Nuevo Mundo y Saga Final.</text>
+    <circle cx="690" cy="250" r="66" fill="#E2AA2F" fill-opacity="0.14" stroke="#E2AA2F" stroke-opacity="0.4" stroke-width="2"/>
+    <text x="655" y="258" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="800">Arcos</text>
+
+    <text x="48" y="396" fill="#E2AA2F" font-family="Inter" font-size="13" font-weight="800" letter-spacing="4">ONE PIECE</text>
+    <text x="48" y="442" fill="#F4EFE4" font-family="Playfair Display" font-size="42" font-weight="800">Arcos de One Piece</text>
+    <text x="48" y="486" fill="#D0C5B0" font-family="Inter" font-size="16">
+      <tspan x="48" dy="0">One Piece se organiza en sagas y arcos que muestran como Luffy pasa de pirata novato</tspan>
+      <tspan x="48" dy="26">a una figura capaz de sacudir el equilibrio del mundo.</tspan>
+    </text>
+    <text x="48" y="540" fill="#E2AA2F" font-family="Inter" font-size="15" font-weight="800">Volver a One Piece</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="18" y="598" width="275" height="112" rx="20" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="50" y="662" fill="#E2AA2F" font-family="Playfair Display" font-size="42" font-weight="800">11</text>
+    <text x="122" y="646" fill="#F4EFE4" font-family="Inter" font-size="15" font-weight="800">Sagas</text>
+    <text x="122" y="674" fill="#D0C5B0" font-family="Inter" font-size="13">Principales</text>
+
+    <rect x="330" y="598" width="275" height="112" rx="20" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="362" y="662" fill="#E2AA2F" font-family="Playfair Display" font-size="42" font-weight="800">33</text>
+    <text x="446" y="646" fill="#F4EFE4" font-family="Inter" font-size="15" font-weight="800">Arcos</text>
+    <text x="446" y="674" fill="#D0C5B0" font-family="Inter" font-size="13">Destacados</text>
+
+    <rect x="642" y="598" width="275" height="112" rx="20" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="674" y="662" fill="#E2AA2F" font-family="Playfair Display" font-size="42" font-weight="800">2</text>
+    <text x="746" y="646" fill="#F4EFE4" font-family="Inter" font-size="15" font-weight="800">Etapas</text>
+    <text x="746" y="674" fill="#D0C5B0" font-family="Inter" font-size="13">Timeskip y Nuevo Mundo</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="18" y="748" width="908" height="612" rx="28" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="48" y="798" fill="#E2AA2F" font-family="Inter" font-size="13" font-weight="800" letter-spacing="4">GUIA GENERAL</text>
+    <text x="48" y="844" fill="#F4EFE4" font-family="Playfair Display" font-size="34" font-weight="800">Como se construye la aventura de Luffy</text>
+    <text x="48" y="888" fill="#D0C5B0" font-family="Inter" font-size="15">
+      <tspan x="48" dy="0">Los arcos no solo encadenan combates. Cada uno presenta un problema local conectado</tspan>
+      <tspan x="48" dy="25">con algo mayor: Gobierno Mundial, Yonkos, poneglyphs, Siglo Vacio o libertad.</tspan>
+    </text>
+
+    <rect x="48" y="950" width="847" height="86" rx="16" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="72" y="982" fill="#D0C5B0" font-family="Inter" font-size="14">• Las primeras sagas forman la tripulacion y abren la entrada a la Grand Line.</text>
+    <text x="72" y="1014" fill="#D0C5B0" font-family="Inter" font-size="14">• Tras el timeskip, el foco pasa a alianzas, emperadores y Road Poneglyphs.</text>
+
+    <text x="48" y="1094" fill="#F4EFE4" font-family="Playfair Display" font-size="28" font-weight="800">Sagas y arcos principales</text>
+
+    <rect x="48" y="1130" width="407" height="92" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="72" y="1162" fill="#E2AA2F" font-family="Inter" font-size="12" font-weight="800" letter-spacing="1.5">SAGA EAST BLUE</text>
+    <text x="72" y="1190" fill="#F4EFE4" font-family="Playfair Display" font-size="22" font-weight="800">Los origenes del Sombrero de Paja</text>
+    <text x="72" y="1214" fill="#D0C5B0" font-family="Inter" font-size="13">6 arcos · Romance Dawn, Baratie, Arlong Park...</text>
+
+    <rect x="488" y="1130" width="407" height="92" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="512" y="1162" fill="#E2AA2F" font-family="Inter" font-size="12" font-weight="800" letter-spacing="1.5">SAGA ARABASTA</text>
+    <text x="512" y="1190" fill="#F4EFE4" font-family="Playfair Display" font-size="22" font-weight="800">La entrada a la Grand Line</text>
+    <text x="512" y="1214" fill="#D0C5B0" font-family="Inter" font-size="13">5 arcos · Vivi, Baroque Works y Crocodile.</text>
+
+    <rect x="48" y="1248" width="407" height="92" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="72" y="1280" fill="#E2AA2F" font-family="Inter" font-size="12" font-weight="800" letter-spacing="1.5">SAGA WATER 7</text>
+    <text x="72" y="1308" fill="#F4EFE4" font-family="Playfair Display" font-size="22" font-weight="800">La tripulacion se rompe</text>
+    <text x="72" y="1332" fill="#D0C5B0" font-family="Inter" font-size="13">Robin, Usopp, el Going Merry y Enies Lobby.</text>
+
+    <rect x="488" y="1248" width="407" height="92" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="512" y="1280" fill="#E2AA2F" font-family="Inter" font-size="12" font-weight="800" letter-spacing="1.5">MARINEFORD</text>
+    <text x="512" y="1308" fill="#F4EFE4" font-family="Playfair Display" font-size="22" font-weight="800">El mundo muestra su escala</text>
+    <text x="512" y="1332" fill="#D0C5B0" font-family="Inter" font-size="13">Sabaody, Impel Down, Ace y una nueva era.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="18" y="1398" width="908" height="382" rx="28" fill="#0C151F" fill-opacity="0.93" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="48" y="1448" fill="#F4EFE4" font-family="Playfair Display" font-size="30" font-weight="800">Claves para entender los arcos</text>
+
+    <rect x="48" y="1486" width="407" height="142" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="72" y="1522" fill="#E2AA2F" font-family="Inter" font-size="13" font-weight="800">LECTURA DE SAGAS</text>
+    <text x="72" y="1552" fill="#D0C5B0" font-family="Inter" font-size="14">Cada saga agrupa arcos conectados por un conflicto mayor.</text>
+    <text x="72" y="1582" fill="#D0C5B0" font-family="Inter" font-size="14">Las islas reflejan libertad, justicia, racismo o herencia.</text>
+
+    <rect x="488" y="1486" width="407" height="142" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="512" y="1522" fill="#E2AA2F" font-family="Inter" font-size="13" font-weight="800">ARCOS DECISIVOS</text>
+    <text x="512" y="1552" fill="#D0C5B0" font-family="Inter" font-size="14">Arlong Park, Arabasta, Enies Lobby, Marineford,</text>
+    <text x="512" y="1582" fill="#D0C5B0" font-family="Inter" font-size="14">Wano y Egghead cambian el peso de la historia.</text>
+
+    <rect x="48" y="1654" width="847" height="92" rx="18" fill="#101B27" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <text x="72" y="1688" fill="#F4EFE4" font-family="Playfair Display" font-size="24" font-weight="800">Metadatos</text>
+    <text x="72" y="1724" fill="#D0C5B0" font-family="Inter" font-size="14">Serie: One Piece · Apartado: Arcos · Sagas listadas: 11 · Arcos listados: 33 · Enfoque: orden cronologico</text>
+  </g>
+
+  <rect x="24" y="1830" width="98" height="38" rx="19" fill="#0C151F" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="42" y="1854" fill="#F4EFE4" font-family="Inter" font-size="14" font-weight="800">♟ Audio</text>
+  <circle cx="886" cy="1838" r="20" fill="url(#gold)"/>
+  <text x="879" y="1846" fill="#101214" font-family="Inter" font-size="18" font-weight="900">↑</text>
+</svg>

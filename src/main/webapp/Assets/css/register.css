@@ -1,4 +1,3 @@
-/* ======== ESTILOS GENERALES ======== */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
@@ -9,7 +8,6 @@ body {
     height: 100vh;
 }
 
-/* ======== CONTENEDOR ======== */
 .register-container {
     width: 100%;
     max-width: 28.125rem;
@@ -24,7 +22,6 @@ body {
     text-align: center;
 }
 
-/* ======== TITULOS ======== */
 .register-box h1 {
     color: #ffcc00;
     font-size: 2rem;
@@ -36,7 +33,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* ======== FORMULARIO ======== */
 .input-group {
     text-align: left;
     margin-bottom: 1.5rem;
@@ -62,7 +58,6 @@ body {
     outline: 0.125rem solid #ffcc00;
 }
 
-/* ======== BOTÓN ======== */
 .btn-register {
     width: 100%;
     padding: 0.8rem;
@@ -79,7 +74,6 @@ body {
     background-color: #ffd633;
 }
 
-/* ======== ENLACES ======== */
 .extra-links {
     margin-top: 1.5rem;
     text-align: center;
@@ -94,7 +88,6 @@ body {
     text-decoration: underline;
 }
 
-/* ======== RESPONSIVE ======== */
 @media (max-width: 37.5rem) {
     .register-box {
         padding: 1.5rem;
